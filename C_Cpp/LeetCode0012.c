@@ -22,8 +22,8 @@ char* intToRoman(int num) {
 	return result;
 }
 
-int main() {
-	printf("%s\n", intToRoman(3999));
-	system("pause");
-	return 0;
-}
+//int main() {
+//	printf("%s\n", intToRoman(3999));
+//	system("pause");
+//	return 0;
+//}

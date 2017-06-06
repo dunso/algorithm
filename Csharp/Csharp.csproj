@@ -52,6 +52,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Array\LeetCode0006.cs" />
+    <Compile Include="Digital\LeetCode0012.cs" />
     <Compile Include="DP\LeetCode0010.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

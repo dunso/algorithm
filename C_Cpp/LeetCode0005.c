@@ -46,11 +46,11 @@ char* longestPalindrome(char* s)
 	return s;
 }
 
-int main()
-{
-	char s[] = "cbbd";
-	char * result = longestPalindrome(s);
-	puts(result);
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	char s[] = "cbbd";
+//	char * result = longestPalindrome(s);
+//	puts(result);
+//	system("pause");
+//	return 0;
+//}

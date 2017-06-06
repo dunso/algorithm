@@ -41,12 +41,12 @@ double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Si
 		+ FindKthMin(nums1, nums1Size, nums2, nums2Size, mRightIndex)) / 2.0;
 }
 
-int main()
-{
-	int mNums1[] = { 1, 2 };
-	int mNums2[] = { 1, 1 };
-	double mResult = findMedianSortedArrays(mNums1, 2, mNums2, 2);
-	printf("%lf\n", mResult);
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	int mNums1[] = { 1, 2 };
+//	int mNums2[] = { 1, 1 };
+//	double mResult = findMedianSortedArrays(mNums1, 2, mNums2, 2);
+//	printf("%lf\n", mResult);
+//	system("pause");
+//	return 0;
+//}

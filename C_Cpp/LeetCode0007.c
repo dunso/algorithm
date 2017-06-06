@@ -14,8 +14,8 @@ int reverse(int x) {
 	return mResult;
 }
 
-int main() {
-	printf("%d\n", reverse(1534236469));
-	system("pause");
-	return 0;
-}
+//int main() {
+//	printf("%d\n", reverse(1534236469));
+//	system("pause");
+//	return 0;
+//}

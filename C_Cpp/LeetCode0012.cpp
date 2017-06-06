@@ -17,9 +17,9 @@ public:
 	}
 };
 
-int main() {
-	LeetCode0012 leetCode0012 = LeetCode0012();
-	cout << leetCode0012.intToRoman(3999) << endl;
-	system("pause");
-	return 0;
-}
+//int main() {
+//	LeetCode0012 leetCode0012 = LeetCode0012();
+//	cout << leetCode0012.intToRoman(3999) << endl;
+//	system("pause");
+//	return 0;
+//}

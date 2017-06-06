@@ -37,10 +37,10 @@ int lengthOfLongestSubstring(char* s)
 	return mResultLength;
 }
 
-int main()
-{
-	char s[9] = { 'a','b','c','a','b','c','b','b','\0' };
-	lengthOfLongestSubstring(s);
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	char s[9] = { 'a','b','c','a','b','c','b','b','\0' };
+//	lengthOfLongestSubstring(s);
+//	system("pause");
+//	return 0;
+//}

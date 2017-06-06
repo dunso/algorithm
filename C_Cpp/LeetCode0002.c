@@ -65,27 +65,27 @@ struct ListNode* ArrayToLink(int aArray[], int aLength)
 	return aHead;
 }
 
-int main()
-{
-	int mA1[] = { 1 }, mA2[] = { 9,9 };
-
-	struct ListNode* mL1 = ArrayToLink(mA1, 1);
-	struct ListNode* mL2 = ArrayToLink(mA2, 2);
-
-	struct ListNode* mResult = addTwoNumbers(mL1->next, mL2->next);
-
-	if (mResult != NULL)
-	{
-		printf("%d", mResult->val);
-		mResult = mResult->next;
-	}
-
-	while (mResult != NULL)
-	{
-		printf(" -> %d", mResult->val);
-		mResult = mResult->next;
-	}
-
-	system("pause");
-	return 1;
-}
+//int main()
+//{
+//	int mA1[] = { 1 }, mA2[] = { 9,9 };
+//
+//	struct ListNode* mL1 = ArrayToLink(mA1, 1);
+//	struct ListNode* mL2 = ArrayToLink(mA2, 2);
+//
+//	struct ListNode* mResult = addTwoNumbers(mL1->next, mL2->next);
+//
+//	if (mResult != NULL)
+//	{
+//		printf("%d", mResult->val);
+//		mResult = mResult->next;
+//	}
+//
+//	while (mResult != NULL)
+//	{
+//		printf(" -> %d", mResult->val);
+//		mResult = mResult->next;
+//	}
+//
+//	system("pause");
+//	return 1;
+//}
