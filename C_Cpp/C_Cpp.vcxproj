@@ -146,6 +146,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="LeetCode0001.c" />
+    <ClCompile Include="LeetCode0002.c" />
+    <ClCompile Include="LeetCode0003.c" />
+    <ClCompile Include="LeetCode0004.c" />
+    <ClCompile Include="LeetCode0005.c" />
+    <ClCompile Include="LeetCode0007.c" />
+    <ClCompile Include="LeetCode0008.c" />
+    <ClCompile Include="LeetCode0009.c" />
+    <ClCompile Include="LeetCode0011.c" />
+    <ClCompile Include="LeetCode0012.c" />
+    <ClCompile Include="LeetCode0012.cpp" />
+    <ClCompile Include="LeetCode0013.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

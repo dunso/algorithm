@@ -17,9 +17,9 @@ bool isPalindrome(int x) {
 	return x == 0;
 }
 
-int main() {
-	int x = -1;
-	printf("%d\n", isPalindrome(x));
-	system("pause");
-	return 0;
-}
+//int main() {
+//	int x = -1;
+//	printf("%d\n", isPalindrome(x));
+//	system("pause");
+//	return 0;
+//}

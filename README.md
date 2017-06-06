@@ -1,7 +1,5 @@
 # LeetCode
 
-------------
-
 |Id  | Title  | Solution   | Time | Runtime |  Space | Difficulty  | Catagory|
 | :------------: | :------------ | :------------: | :------------: | :------------: | :------------: | :------------: |:------------: |
 |  <a href="https://leetcode.com/problems/two-sum" target="_blank">0001</a> |Two Sum | [C](https://e.srl/leetcode-1/)  |  no | 0ms  | O(n)  |  Easy |Array|
@@ -17,3 +15,4 @@
 |  <a href="https://leetcode.com/problems/container-with-most-water" target="_blank">0011</a> |Container With Most Water | [C](https://e.srl/leetcode-11/)  | O(n) |6ms| O(1)  |  Medium |Greedy|
 |  <a href="https://leetcode.com/problems/integer-to-roman" target="_blank">0012</a> |Integer to Roman | [C,C++,C#](https://e.srl/leetcode-12/)  | O(n) |49ms| O(1)  |  Medium |Digital|
 |  <a href="https://leetcode.com/problems/roman-to-integer" target="_blank">0013</a> |Roman to Integer | [C++](https://e.srl/leetcode-13/)  | O(n) |85ms| O(1)  |  Easy |Digital|
+|  <a href="https://leetcode.com/problems/longest-common-prefix" target="_blank">0014</a> |Longest Common Prefix | [C](https://e.srl/leetcode-14/)  | O(n\*n) |85ms| O(n)  |  Easy |Array|
