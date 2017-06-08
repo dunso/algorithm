@@ -54,5 +54,8 @@
     <ClCompile Include="LeetCode0014.c">
       <Filter>Array</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode0015.c">
+      <Filter>Digital</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

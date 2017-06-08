@@ -45,24 +45,24 @@ int** threeSum(int* nums, int numsSize, int* returnSize) {
 	return result;
 }
 
-int main()
-{
-	int arr[] = { -2, 0, 0, 2, 2 };
-	int **res = NULL;
-	int size;
-
-	res = threeSum(arr, 5, &size);
-
-	for (int i = 0; i < size; i++)
-	{
-		printf("(%d, %d, %d)\n", res[i][0], res[i][1], res[i][2]);
-	}
-
-	for (int i = 0; i < size; i++)
-	{
-		free(res[i]);
-	}
-	free(res);
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	int arr[] = { -2, 0, 0, 2, 2 };
+//	int **res = NULL;
+//	int size;
+//
+//	res = threeSum(arr, 5, &size);
+//
+//	for (int i = 0; i < size; i++)
+//	{
+//		printf("(%d, %d, %d)\n", res[i][0], res[i][1], res[i][2]);
+//	}
+//
+//	for (int i = 0; i < size; i++)
+//	{
+//		free(res[i]);
+//	}
+//	free(res);
+//	system("pause");
+//	return 0;
+//}

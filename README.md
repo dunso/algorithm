@@ -15,6 +15,8 @@
 |  <a href="https://leetcode.com/problems/container-with-most-water" target="_blank">0011</a> |Container With Most Water | [C](https://e.srl/leetcode-11/)  | O(n) |6ms| O(1)  |  Medium |Greedy|
 |  <a href="https://leetcode.com/problems/integer-to-roman" target="_blank">0012</a> |Integer to Roman | [C,C++,C#](https://e.srl/leetcode-12/)  | O(n) |49ms| O(1)  |  Medium |Digital|
 |  <a href="https://leetcode.com/problems/roman-to-integer" target="_blank">0013</a> |Roman to Integer | [C++](https://e.srl/leetcode-13/)  | O(n) |85ms| O(1)  |  Easy |Digital|
-|  <a href="https://leetcode.com/problems/longest-common-prefix" target="_blank">0014</a> |Longest Common Prefix | [C](https://e.srl/leetcode-14/)  | O(n\*n) |85ms| O(n)  |  Easy |Array|
-|  <a href="https://leetcode.com/problems/3sum" target="_blank">0015</a> |3Sum | [C](https://e.srl/leetcode-15/)  | O(n\*n) |85ms| O(n\*n)  |  Medium |Digital|
+|  <a href="https://leetcode.com/problems/longest-common-prefix" target="_blank">0014</a> |Longest Common Prefix | [C](https://e.srl/leetcode-14/)  | O(n\*n) |3ms| O(n)  |  Easy |Array|
+|  <a href="https://leetcode.com/problems/3sum" target="_blank">0015</a> |3Sum | [C](https://e.srl/leetcode-15/)  | O(n\*n) |76ms| O(n\*n)  |  Medium |Digital|
+|  <a href="https://leetcode.com/problems/3sum-closest" target="_blank">0016</a> |3Sum Closest | [C](https://e.srl/leetcode-16/)  | O(n\*n) |6ms| O(1)  |  Medium |Digital|
+|  <a href="https://leetcode.com/problems/merge-k-sorted-lists" target="_blank">0023</a> |Merge k Sorted Lists | [C,Java](https://e.srl/leetcode-23/)  | O(n\*logn) |9ms| O(n)  |  Hard |Heap|
 
