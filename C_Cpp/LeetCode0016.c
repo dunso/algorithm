@@ -44,10 +44,10 @@ int threeSumClosest(int* nums, int numsSize, int target) {
 	return result;
 }
 
-int main()
-{
-	int arr[] = { 1,1,1,0 };
-	printf("%d\n", threeSumClosest(arr, 4, -100));
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	int arr[] = { 1,1,1,0 };
+//	printf("%d\n", threeSumClosest(arr, 4, -100));
+//	system("pause");
+//	return 0;
+//}
