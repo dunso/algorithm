@@ -12,9 +12,9 @@ int maxArea(int* height, int heightSize) {
 	return mContain;
 }
 
-int main() {
-	int height[] = { 1, 1 };
-	printf("%d\n", maxArea(height, 2));
-	system("pause");
-	return 0;
-}
+//int main() {
+//	int height[] = { 1, 1 };
+//	printf("%d\n", maxArea(height, 2));
+//	system("pause");
+//	return 0;
+//}

@@ -13,6 +13,9 @@
     <Filter Include="Greedy">
       <UniqueIdentifier>{301f6b5b-0b0b-4a05-889e-9ba40b2936ff}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Heap">
+      <UniqueIdentifier>{7a3e8148-218a-44a4-ada9-73d0401eee5d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LeetCode0001.c">
@@ -56,6 +59,12 @@
     </ClCompile>
     <ClCompile Include="LeetCode0015.c">
       <Filter>Digital</Filter>
+    </ClCompile>
+    <ClCompile Include="LeetCode0016.c">
+      <Filter>Digital</Filter>
+    </ClCompile>
+    <ClCompile Include="LeetCode0023.c">
+      <Filter>Heap</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

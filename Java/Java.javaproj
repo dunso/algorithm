@@ -47,9 +47,23 @@
     <None Include="**\*.*" Exclude="bin\**\*.*;obj\**\*.*;out\**\*.*;*.user;*.javaproj;*.vspscc;*.vsscc;*.vssscc" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="lib\junit-4.12.jar">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="packages.config">
       <SubType>Content</SubType>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PriorityQueue\LeetCode0023.java">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <JarReference Include="C:\Users\bean\Workspaces\GitHub\LeetCode\Java\lib\junit-4.12.jar">
+      <IncludeInBuild>True</IncludeInBuild>
+      <Private>False</Private>
+    </JarReference>
   </ItemGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
