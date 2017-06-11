@@ -78,38 +78,38 @@ struct ListNode* mergeKLists(struct ListNode** lists, int listsSize) {
 	return result;
 }
 
-int main()
-{
-	struct ListNode * ln11 = (struct ListNode *)malloc(sizeof(struct ListNode));
-	ln11->val = 1;
-	struct ListNode * ln12 = (struct ListNode *)malloc(sizeof(struct ListNode));
-	ln12->val = 2;
-	struct ListNode * ln13 = (struct ListNode *)malloc(sizeof(struct ListNode));
-	ln13->val = 2;
-	ln11->next = ln12;
-	ln12->next = ln13;
-	ln13->next = NULL;
-
-	struct ListNode * ln21 = (struct ListNode *)malloc(sizeof(struct ListNode));
-	ln21->val = 1;
-	struct ListNode * ln22 = (struct ListNode *)malloc(sizeof(struct ListNode));
-	ln22->val = 1;
-	struct ListNode * ln23 = (struct ListNode *)malloc(sizeof(struct ListNode));
-	ln23->val = 2;
-	ln21->next = ln22;
-	ln22->next = ln23;
-	ln23->next = NULL;
-
-	struct ListNode * lists[] = { ln11,ln21 };
-
-	struct ListNode * result = mergeKLists(lists, 2);
-
-	while (result != NULL)
-	{
-		printf("%d", result->val);
-		result = result->next;
-	}
-	printf("\n");
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	struct ListNode * ln11 = (struct ListNode *)malloc(sizeof(struct ListNode));
+//	ln11->val = 1;
+//	struct ListNode * ln12 = (struct ListNode *)malloc(sizeof(struct ListNode));
+//	ln12->val = 2;
+//	struct ListNode * ln13 = (struct ListNode *)malloc(sizeof(struct ListNode));
+//	ln13->val = 2;
+//	ln11->next = ln12;
+//	ln12->next = ln13;
+//	ln13->next = NULL;
+//
+//	struct ListNode * ln21 = (struct ListNode *)malloc(sizeof(struct ListNode));
+//	ln21->val = 1;
+//	struct ListNode * ln22 = (struct ListNode *)malloc(sizeof(struct ListNode));
+//	ln22->val = 1;
+//	struct ListNode * ln23 = (struct ListNode *)malloc(sizeof(struct ListNode));
+//	ln23->val = 2;
+//	ln21->next = ln22;
+//	ln22->next = ln23;
+//	ln23->next = NULL;
+//
+//	struct ListNode * lists[] = { ln11,ln21 };
+//
+//	struct ListNode * result = mergeKLists(lists, 2);
+//
+//	while (result != NULL)
+//	{
+//		printf("%d", result->val);
+//		result = result->next;
+//	}
+//	printf("\n");
+//	system("pause");
+//	return 0;
+//}

@@ -16,6 +16,9 @@
     <Filter Include="Heap">
       <UniqueIdentifier>{7a3e8148-218a-44a4-ada9-73d0401eee5d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Linked">
+      <UniqueIdentifier>{b74da6e3-42da-4e5b-ae0b-5d6bffb2c523}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LeetCode0001.c">
@@ -65,6 +68,9 @@
     </ClCompile>
     <ClCompile Include="LeetCode0023.c">
       <Filter>Heap</Filter>
+    </ClCompile>
+    <ClCompile Include="LeetCode0025.c">
+      <Filter>Linked</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
