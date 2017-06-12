@@ -58,6 +58,9 @@
     <Compile Include="PriorityQueue\LeetCode0023.java">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="String\LeetCode0030.java">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <JarReference Include="C:\Users\bean\Workspaces\GitHub\LeetCode\Java\lib\junit-4.12.jar">
