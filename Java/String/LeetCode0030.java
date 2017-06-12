@@ -1,70 +1,81 @@
-package Java;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-class LeetCode0030 {
+import org.junit.Test;
 
-	public List<Integer> findSubstring(String s, String[] words) {
-		int N = s.length();
-		List<Integer> indexes = new ArrayList<Integer>(s.length());
-		if (words.length == 0) {
-			return indexes;
-		}
-		int M = words[0].length();
-		if (N < M * words.length) {
-			return indexes;
-		}
-		int last = N - M + 1;
+public class LeetCode0030 {
 
-		Map<String, Integer> mapping = new HashMap<String, Integer>(words.length);
-		int [][] table = new int[2][words.length];
-		int failures = 0, index = 0;
-		for (int i = 0; i < words.length; ++i) {
-			Integer mapped = mapping.get(words[i]);
-			if (mapped == null) {
-				++failures;
-				mapping.put(words[i], index);
-				mapped = index++;
-			}
-			++table[0][mapped];
+	public List<Integer> findSubstring(String s, String[] words){
+		
+		List<Integer> result = new ArrayList<Integer>();
+		
+		int wordLength, wordsLength, sLength = s.length();
+		
+		if (sLength == 0 || (wordLength = words[0].length()) == 0 || (wordsLength = wordLength * words.length) == 0 ){
+			return result;
 		}
-	
-		int [] smapping = new int[last];
-		for (int i = 0; i < last; ++i) {
-			String section = s.substring(i, i + M);
-			Integer mapped = mapping.get(section);
-			if (mapped == null) {
-				smapping[i] = -1;
-			} else {
-				smapping[i] = mapped;
-			}
+		
+		Map<String, Integer> wordMap = new HashMap<String, Integer>();
+		
+		for(String word : words){
+			wordMap.put(word, wordMap.containsKey(word) ? wordMap.get(word) + 1 :  1);
 		}
-	
-		for (int i = 0; i < M; ++i) {
-			//reset scan variables
-			int currentFailures = failures; 
-			int left = i, right = i;
-			Arrays.fill(table[1], 0);
-
-			while (right < last) {
-				while (currentFailures > 0 && right < last) {
-					int target = smapping[right];
-					if (target != -1 && ++table[1][target] == table[0][target]) {
-						--currentFailures;
-					}
-					right += M;
+			
+		for(int i = 0; i< wordLength; i++){
+			
+			Map<String, Integer> map = new HashMap<String, Integer>();
+			
+			for(int j = i, start = i; j + wordLength <= sLength && start + wordsLength <= sLength; j+= wordLength){
+				
+				String str = s.substring(j, j + wordLength);
+				
+				if(!wordMap.containsKey(str)){
+					map.clear(); 
+					start = j + wordLength; 
+					continue;
 				}
-				while (currentFailures == 0 && left < right) {
-					int target = smapping[left];
-					if (target != -1 && --table[1][target] == table[0][target] - 1) {
-						int length = right - left;
-						if ((length / M) ==  words.length) {
-							indexes.add(left);
-						}
-						++currentFailures;
-					}
-					left += M;
+				
+				map.put(str, map.containsKey(str) ? map.get(str) + 1 : 1);
+				
+				if(map.get(str) == wordMap.get(str)){
+					start = judge(start, j, wordLength, wordsLength,s, map, result);
+				}else if(map.get(str) > wordMap.get(str)){
+					start = skipFirstWordAfterStart(start, wordLength,wordsLength, s, map, str);
 				}
 			}
 		}
-		return indexes;
+		return result;
+	}
+	
+	private int judge(int start, int j, int wordLength,  int wordsLength, String s, Map<String, Integer> map, List<Integer> result){
+		if(start + wordsLength == j + wordLength){
+			result.add(start);
+			start = skipFirstWordAfterStart(start, wordLength, wordsLength, s, map, s.substring(start,start + wordLength));
+		}
+		return start;
+	}
+	
+	private int skipFirstWordAfterStart(int start, int wordLength, int wordsLength, String s, Map<String, Integer> map, String toBeRemove){
+		String tmp = null;
+		while(start + wordsLength <= s.length() && !toBeRemove.equals(tmp = s.substring(start, start + wordLength))){
+			map.put(tmp, map.get(tmp) - 1);
+			start += wordLength;
+		}
+		if(start + wordsLength <= s.length()){
+			map.put(toBeRemove, map.get(toBeRemove) - 1);
+		}
+		return start + wordLength;
+	}
+	
+	@Test
+	public void test(){
+		String s = "barfoothefoobarman";
+		String[] words = {"foo","bar"};
+		List<Integer> results = findSubstring(s, words);
+		for(int result : results){
+			System.out.println(result);
+		}
 	}
 }
