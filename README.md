@@ -21,3 +21,4 @@
 |  <a href="https://leetcode.com/problems/merge-k-sorted-lists" target="_blank">0023</a> |Merge k Sorted Lists | [C,Java](https://e.srl/leetcode-23/)  | O(n\*logn) |9ms| O(n)  |  Hard |Heap|
 |  <a href="https://leetcode.com/problems/reverse-nodes-in-k-group" target="_blank">0025</a> |Reverse Nodes in k-Group | [C,Java](https://e.srl/leetcode-25/)  | O(n) |6ms| O(1)  |  Hard |Linked|
 |  <a href="https://leetcode.com/problems/substring-with-concatenation-of-all-words" target="_blank">0030</a> |Substring with Concatenation of All Words | [Java](https://e.srl/leetcode-30/)  | O(n) |23ms| O(n)  |  Hard |String|
+|  <a href="https://leetcode.com/problems/longest-valid-parentheses" target="_blank">0032</a> |Longest Valid Parentheses | [C](https://e.srl/leetcode-32/)  | O(n) |6ms| O(n)  |  Hard |DP|

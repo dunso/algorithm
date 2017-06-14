@@ -19,6 +19,9 @@
     <Filter Include="Linked">
       <UniqueIdentifier>{b74da6e3-42da-4e5b-ae0b-5d6bffb2c523}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DP">
+      <UniqueIdentifier>{9f9c500a-41f7-449c-939c-dbaf6efbccc5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LeetCode0001.c">
@@ -71,6 +74,9 @@
     </ClCompile>
     <ClCompile Include="LeetCode0025.c">
       <Filter>Linked</Filter>
+    </ClCompile>
+    <ClCompile Include="LeetCode0032.c">
+      <Filter>DP</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

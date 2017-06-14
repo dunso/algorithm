@@ -54,23 +54,23 @@ struct ListNode * reverseKGroup(struct ListNode* head, int k)
 	return dummy->next;
 }
 
-int main()
-{
-	struct ListNode * ln = (struct ListNode *) malloc(3 * sizeof(struct ListNode));
-	ln->val = 1;
-	(ln + 1)->val = 2;
-	(ln + 2)->val = 3;
-	ln->next = ln + 1;
-	(ln + 1)->next = ln + 2;
-	(ln + 2)->next = NULL;
-	struct ListNode * result = reverseKGroup(ln, 3);
-
-	while (result != NULL)
-	{
-		printf("%d", result->val);
-		result = result->next;
-	}
-
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	struct ListNode * ln = (struct ListNode *) malloc(3 * sizeof(struct ListNode));
+//	ln->val = 1;
+//	(ln + 1)->val = 2;
+//	(ln + 2)->val = 3;
+//	ln->next = ln + 1;
+//	(ln + 1)->next = ln + 2;
+//	(ln + 2)->next = NULL;
+//	struct ListNode * result = reverseKGroup(ln, 3);
+//
+//	while (result != NULL)
+//	{
+//		printf("%d", result->val);
+//		result = result->next;
+//	}
+//
+//	system("pause");
+//	return 0;
+//}
