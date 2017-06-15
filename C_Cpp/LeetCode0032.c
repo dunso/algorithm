@@ -32,10 +32,10 @@ int longestValidParentheses(char* s) {
 	return result;
 }
 
-int main()
-{
-	char * s = ")()())";
-	printf("%d\n", longestValidParentheses(s));
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	char * s = ")()())";
+//	printf("%d\n", longestValidParentheses(s));
+//	system("pause");
+//	return 0;
+//}

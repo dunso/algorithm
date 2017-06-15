@@ -22,6 +22,9 @@
     <Filter Include="DP">
       <UniqueIdentifier>{9f9c500a-41f7-449c-939c-dbaf6efbccc5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="BT">
+      <UniqueIdentifier>{0a5c3e6b-bce7-454a-a33e-13d261b584ac}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LeetCode0001.c">
@@ -77,6 +80,9 @@
     </ClCompile>
     <ClCompile Include="LeetCode0032.c">
       <Filter>DP</Filter>
+    </ClCompile>
+    <ClCompile Include="LeetCode0037_1.c">
+      <Filter>BT</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
