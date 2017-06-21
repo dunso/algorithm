@@ -23,3 +23,4 @@
 |  <a href="https://leetcode.com/problems/substring-with-concatenation-of-all-words" target="_blank">0030</a> |Substring with Concatenation of All Words | [Java](https://e.srl/leetcode-30/)  | O(n) |23ms| O(n)  |  Hard |String|
 |  <a href="https://leetcode.com/problems/longest-valid-parentheses" target="_blank">0032</a> |Longest Valid Parentheses | [C](https://e.srl/leetcode-32/)  | O(n) |6ms| O(n)  |  Hard |DP|
 |  <a href="https://leetcode.com/problems/sudoku-solver" target="_blank">0037</a> |Sudoku Solver | [C](https://e.srl/leetcode-37/)  | O(n) |0ms| O(n\*n)  |  Hard |BT|
+|  <a href="https://leetcode.com/problems/first-missing-positive" target="_blank">0041</a> |First Missing Positive | [C](https://e.srl/leetcode-41/)  | O(n) |3ms| O(1)  |  Hard |Array|
