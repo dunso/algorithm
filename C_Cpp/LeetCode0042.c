@@ -1,22 +1,32 @@
-#define MAX(x, y) (((x) > (y)) ? (x) : (y))
-int trap(int* height, int heightSize) {
+#include<stdio.h>
+#include<stdlib.h>
 
-	int a = 0;
-	int b = heightSize - 1;
-	int max = 0;
-	int leftmax = 0;
-	int rightmax = 0;
-	while (a <= b) {
-		leftmax = MAX(leftmax, height[a]);
-		rightmax = MAX(rightmax, height[b]);
-		if (leftmax<rightmax) {
-			max += (leftmax - height[a]);
-			a++;
+int trap(int* height, int heightSize) {
+	
+	int leftMax = *height, rightMax = height[heightSize - 1];
+	int i = 0, j = heightSize -1, result = 0;
+	while(i <= j)
+	{
+		while (leftMax <= rightMax && i <= j && height[i] < leftMax) result += leftMax - height[i++];
+		if(height[i] >= leftMax)
+		{
+			leftMax = height[i];
+			i++;
 		}
-		else {
-			max += (rightmax - height[b]);
-			b--;
+		while (rightMax < leftMax && i <= j && height[j] < rightMax) result += rightMax - height[j--];
+		if(height[j] >= rightMax)
+		{
+			rightMax = height[j];
+			j--;
 		}
 	}
-	return max;
+	return result;
+}
+
+int main()
+{
+ 	int bar[] = {2,0,2};
+	printf("%d\n", trap(bar,3));
+	system("pause");
+	return 0;
 }
