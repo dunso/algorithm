@@ -18,9 +18,11 @@
 |  <a href="https://leetcode.com/problems/longest-common-prefix" target="_blank">0014</a> |Longest Common Prefix | [C](https://e.srl/leetcode-14/)  | O(n\*n) |3ms| O(n)  |  Easy |Array|
 |  <a href="https://leetcode.com/problems/3sum" target="_blank">0015</a> |3Sum | [C](https://e.srl/leetcode-15/)  | O(n\*n) |76ms| O(n\*n)  |  Medium |Digital|
 |  <a href="https://leetcode.com/problems/3sum-closest" target="_blank">0016</a> |3Sum Closest | [C](https://e.srl/leetcode-16/)  | O(n\*n) |6ms| O(1)  |  Medium |Digital|
+|  <a href="https://leetcode.com/problems/letter-combinations-of-a-phone-number" target="_blank">0017</a> |Letter Combinations of a Phone Number | [C,C#](https://e.srl/leetcode-17/)  | O(n\*m) |0ms| O(n)  |  Medium |Queue|
 |  <a href="https://leetcode.com/problems/merge-k-sorted-lists" target="_blank">0023</a> |Merge k Sorted Lists | [C,Java](https://e.srl/leetcode-23/)  | O(n\*logn) |9ms| O(n)  |  Hard |Heap|
 |  <a href="https://leetcode.com/problems/reverse-nodes-in-k-group" target="_blank">0025</a> |Reverse Nodes in k-Group | [C,Java](https://e.srl/leetcode-25/)  | O(n) |6ms| O(1)  |  Hard |Linked|
 |  <a href="https://leetcode.com/problems/substring-with-concatenation-of-all-words" target="_blank">0030</a> |Substring with Concatenation of All Words | [Java](https://e.srl/leetcode-30/)  | O(n) |23ms| O(n)  |  Hard |String|
 |  <a href="https://leetcode.com/problems/longest-valid-parentheses" target="_blank">0032</a> |Longest Valid Parentheses | [C](https://e.srl/leetcode-32/)  | O(n) |6ms| O(n)  |  Hard |DP|
 |  <a href="https://leetcode.com/problems/sudoku-solver" target="_blank">0037</a> |Sudoku Solver | [C](https://e.srl/leetcode-37/)  | O(n) |0ms| O(n\*n)  |  Hard |BT|
 |  <a href="https://leetcode.com/problems/first-missing-positive" target="_blank">0041</a> |First Missing Positive | [C](https://e.srl/leetcode-41/)  | O(n) |3ms| O(1)  |  Hard |Array|
+|  <a href="https://leetcode.com/problems/trapping-rain-water" target="_blank">0042</a> |Trapping Rain Water | [C](https://e.srl/leetcode-42/)  | O(n) |6ms| O(1)  |  Hard |Array|
