@@ -30,5 +30,5 @@
 |  <a href="https://leetcode.com/problems/jump-game-ii" target="_blank">0045</a> |Jump Game II | [C](https://e.srl/leetcode-45/)  | O(n) |6ms| O(1)  |  Hard |Greey|
 |  <a href="https://leetcode.com/problems/n-queens" target="_blank">0051</a> |N-Queens | [C](https://e.srl/leetcode-51/)  | - |3ms| O(n\*n)  |  Hard |Greey|
 |  <a href="https://leetcode.com/problems/insert-interval" target="_blank">0057</a> |Insert Interval | [C](https://e.srl/leetcode-57/)  | O(n) |6ms| O(n)  |  Hard |Array|
-|  <a href="https://leetcode.com/problems/n-queens" target="_blank">0051</a> |N-Queens | [C](https://e.srl/leetcode-51/)  | - |3ms| O(n\*n)  |  Hard |Greey
 |  <a href="https://leetcode.com/problems/implement-trie-prefix-tree" target="_blank">0208</a> |Implement Trie (Prefix Tree) | [C](https://e.srl/leetcode-208/)  | O(n) |39ms| O(n)  |  Medium |Tree|
+|  <a href="https://leetcode.com/problems/count-of-smaller-numbers-after-self" target="_blank">0315</a> |Count of Smaller Numbers After Self | [C](https://e.srl/leetcode-315/)  | O(n\*logn) |16ms| O(n)  |  Hard |Tree|
