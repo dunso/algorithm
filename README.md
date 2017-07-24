@@ -1,3 +1,189 @@
+# A Good Editor is a Best Start
+
+![vscode](https://e.srl/wp-content/uploads/2017/07/vscode.png)
+
+I will strongly recommend [VSCode](https://code.visualstudio.com/) (Visual Studio Code) to write algorithm. It is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages (such as C, C++, C#, Java, Python, PHP, Go which are our main languages to write algorithm.) and runtimes (such as .NET and Unity).
+
+**Now I will tell you how to install the software and configure it. You don't need to Install all I list below. You can just choose what you need.**
+
+>1, Install VSCode
+>2, Install C/C++
+>3, Install GCC/G++
+>4, Install Java
+>5, Install Language Support for Java(TM) by Red Hat
+>6, Install Java Language Support
+>7, Install C#
+>8, Install Code Runner
+>9, Install LLVM
+>10, Install Clang-Format
+>11, Install Darcula IntelliJ Theme
+------
+
+# 1. Install VSCode
+>All coders need to install this software
+
+You can download from this site: [https://code.visualstudio.com/](https://code.visualstudio.com/).
+And then install it just with several clicks.
+
+# 2.  Install C/C++
+>This is a Extension of VSCode. Coders use C or C++ need to install
+
+(1) Open you VSCode
+(2) Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter.
+
+```
+ext install cpptools
+```
+>Now you will know how to install it when you operator as I said above.
+
+# 3. Install GCC/G++
+>Coders use C or C++ need to install
+
+
+(1) You can download from: [http://www.mingw.org/][3]（the download button is on the top right）
+(2) Before install it, please make sure you are connecting with the internet.
+(3) Install the software you just downloaded.
+(4) When you complete installation, there will be shown a management window.
+(5) Find mingw32-gcc-g++ in the window, which Class attribute is `bin`.
+(6) Right click `Mark for Installation`.
+(7) Click `Apply Changes` under the menu `Installation` on the top left of the window.
+(8) That' all, looks great!
+
+
+> Now you need to add `C:\MinGW\bin` to your `Environment Variables` (Windows OS).
+>Please Google if you don't know how to set `Environment Variables`.
+
+Now you can check whether it has been installed successfully whih command line:
+```
+g++ -v
+```
+# 4. Install Java
+>Coders use Java need to install
+
+Please Google if you don't know how to install it
+
+# 5. Language Support for Java(TM) by Red Hat
+>Coders use Java need to install
+
+The same way with C/C++ installing
+```
+ext install java
+```
+# 6. Install Java Language Support
+>Coders use Java need to install
+
+This Extension can show the errors in you code when you are typing.
+```
+ext install vscode-javac
+```
+# 7. Install CSharp
+> Coders use C# need to install
+
+```
+ext install csharp
+```
+
+# 8. Install Code Runner
+> All coders need to install
+
+This Extension can help you Run and Debug code most easily.
+
+```
+ext install code-runner
+```
+# 9. Install LLVM
+>All coders need to install
+
+You can download form: [http://releases.llvm.org/download.html#4.0.1][4]. 
+Please download `Pre-Built Binaries` and then you can install it using the `.exe` file.
+
+>Please Google if you don't know how to install it
+
+# 10. Install Clang-Format
+> All coders need to install
+
+This Extension can help you format code most easily.
+
+```
+ext install clang-format
+```
+
+# 11. Install Darcula IntelliJ Theme
+> No need to install if you like the default theme. Anyway, this theme is my best loveing
+```
+ext install dracula-theme-from-intellij
+```
+
+------
+**We have installed the software that we needed so far, Now we start to configure them**
+
+>All the config will be write to the `setting.json`
+
+Click `file` in the VSCode on top left. Then click `Preferences` --> `Settings`
+Now please copy the code below to you setting.json
+```
+{
+    "workbench.colorTheme": "Darcula Theme from IntelliJ",
+    "java.home": "C:\\Program Files (x86)\\Java\\jdk1.8.0_112",
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName -d ../Classes && java -classpath ../Classes $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o ../exe/$fileNameWithoutExt && cd ../exe && $fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "python",
+        "perl": "perl",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "kotlin": "cd $dir && kotlinc $fileName -include-runtime -d $fileNameWithoutExt.jar && java -jar $fileNameWithoutExt.jar",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runhaskell",
+        "nim": "nim compile --verbosity:0 --hints:off --run"
+    },
+    "clang-format.executable": "C:\\Program Files\\LLVM\\bin\\clang-format",
+    "clang-format.language.java.enable": true,
+    "clang-format.language.java.style": "WebKit",
+    "clang-format.language.c.enable": true,
+    "clang-format.language.c.style": "WebKit",
+    "clang-format.language.cpp.enable": true,
+    "clang-format.language.cpp.style": "WebKit"
+}
+```
+
+**Something to be clear:**
+>1. `code-runner.executorMap` is the Code Runner configuration. I have configured the c, c++ and java. You can modify it accordingly
+>2. `clang-format.executable` is the llvm bin path, please point it to the installation path 
+>3. `clang-format.language.java.enable: true` means you will use clang-format to farmat java code.
+>4. `clang-format.language.java.style: "WebKit` means format code to WebKit style, you can choose LLVM, Google, Chromium, Mozilla, WebKit or Json Style.
+
+
+
 # LeetCode
 
 |Id  | Title  | Solution   | Time | Runtime |  Space | Difficulty  | Catagory|
