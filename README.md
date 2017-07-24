@@ -19,13 +19,15 @@ I will strongly recommend [VSCode](https://code.visualstudio.com/) (Visual Studi
 >11, Install Darcula IntelliJ Theme<br/>
 ------
 
-# 1. Install VSCode
+# 1. Installation
+
+## 1.1. Install VSCode
 >All coders need to install this software
 
 You can download from this site: [https://code.visualstudio.com/](https://code.visualstudio.com/).
 And then install it just with several clicks.
 
-# 2.  Install C/C++
+## 1.2.  Install C/C++
 >This is a Extension of VSCode. Coders use C or C++ need to install
 
 (1) Open you VSCode<br/>
@@ -36,7 +38,7 @@ ext install cpptools
 ```
 >Now you will know how to install it when you operater as I said above.
 
-# 3. Install GCC/G++
+## 1.3. Install GCC/G++
 >Coders use C or C++ need to install
 
 
@@ -57,33 +59,33 @@ Now you can check whether it has been installed successfully whih command line:
 ```
 g++ -v
 ```
-# 4. Install Java
+## 1.4. Install Java
 >Coders use Java need to install
 
 Please Google if you don't know how to install it
 
-# 5. Language Support for Java(TM) by Red Hat
+## 1.5. Language Support for Java(TM) by Red Hat
 >Coders use Java need to install
 
 The same way with C/C++ installing
 ```
 ext install java
 ```
-# 6. Install Java Language Support
+## 1.6. Install Java Language Support
 >Coders use Java need to install
 
 This Extension can show the errors in you code when you are typing.
 ```
 ext install vscode-javac
 ```
-# 7. Install CSharp
+## 1.7. Install CSharp
 > Coders use C# need to install
 
 ```
 ext install csharp
 ```
 
-# 8. Install Code Runner
+## 1.8. Install Code Runner
 > All coders need to install
 
 This Extension can help you Run and Debug code more easily.
@@ -91,7 +93,7 @@ This Extension can help you Run and Debug code more easily.
 ```
 ext install code-runner
 ```
-# 9. Install LLVM
+## 1.9. Install LLVM
 >All coders need to install
 
 You can download form: [http://releases.llvm.org/download.html#4.0.1][http://releases.llvm.org/download.html#4.0.1]. <br/>
@@ -99,7 +101,7 @@ Please download `Pre-Built Binaries` and then you can install it using the `.exe
 
 >Please Google if you don't know how to install it
 
-# 10. Install Clang-Format
+## 1.10. Install Clang-Format
 > All coders need to install
 
 This Extension can help you format code more easily.
@@ -108,13 +110,14 @@ This Extension can help you format code more easily.
 ext install clang-format
 ```
 
-# 11. Install Darcula IntelliJ Theme
+## 1.11. Install Darcula IntelliJ Theme
 > No need to install if you like the default theme. Anyway, this theme is my best loveing
 ```
 ext install dracula-theme-from-intellij
 ```
-
 ------
+# 2. Configuration
+
 **We have installed the software that we needed so far, Now we start to configure them**
 
 >All the config will be write to the `setting.json`
