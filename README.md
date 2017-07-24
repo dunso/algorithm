@@ -186,6 +186,11 @@ Now please copy the code below to you setting.json
 >4. `clang-format.language.java.style: "WebKit` means format code to WebKit style, you can choose LLVM, Google, Chromium, Mozilla, WebKit or Json Style.
 
 ---
+# 3.Usage
+
+Coding and press `ctrl + alt + n` to build and run. That's all, great!
+
+---
 ---
 
 # LeetCode
