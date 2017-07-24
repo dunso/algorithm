@@ -42,7 +42,7 @@ ext install cpptools
 >Coders use C or C++ need to install
 
 
-(1) You can download from: [http://www.mingw.org/][http://www.mingw.org/]（the download button is on the top right）<br/>
+(1) You can download from: [http://www.mingw.org/](http://www.mingw.org/) (the download button is on the top right）<br/>
 (2) Before install it, please make sure you are connecting with the internet.<br/>
 (3) Install the software you just downloaded.<br/>
 (4) When you complete installation, there will be shown a management window.<br/>
@@ -96,7 +96,7 @@ ext install code-runner
 ## 1.9. Install LLVM
 >All coders need to install
 
-You can download form: [http://releases.llvm.org/download.html#4.0.1][http://releases.llvm.org/download.html#4.0.1]. <br/>
+You can download form: [http://releases.llvm.org/download.html#4.0.1](http://releases.llvm.org/download.html#4.0.1). <br/>
 Please download `Pre-Built Binaries` and then you can install it using the `.exe` file.
 
 >Please Google if you don't know how to install it
