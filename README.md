@@ -234,3 +234,4 @@ Coding and press `ctrl + alt + n` to build and run. That's all, great!
 |  <a href="https://leetcode.com/problems/count-of-range-sum" target="_blank">0327</a> |Count of Range Sum | [C](https://e.srl/leetcode-327/)  | O(n\*logn) |9ms| O(n)  |  Hard |Devide|
 |  <a href="https://leetcode.com/problems/longest-increasing-path-in-a-matrix" target="_blank">0329</a> |Longest Increasing Path in a Matrix | [Java](https://e.srl/leetcode-329/)  | O(n\*m) |16ms| O(n\*m)  |  Hard |DFS|
 |  <a href="https://leetcode.com/problems/patching-array" target="_blank">0330</a> |Patching Array | [Java](https://e.srl/leetcode-330/)  | O(n) |1ms| O(1)  |  Hard |Greey|
+|  <a href="https://leetcode.com/problems/self-crossing" target="_blank">0335</a> |Self Crossing | [Java](https://e.srl/leetcode-335/)  | O(n) |0ms| O(1)  |  Hard |Math|
