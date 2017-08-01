@@ -237,3 +237,4 @@ Coding and press `ctrl + alt + n` to build and run. That's all, great!
 |  <a href="https://leetcode.com/problems/self-crossing" target="_blank">0335</a> |Self Crossing | [Java](https://e.srl/leetcode-335/)  | O(n) |0ms| O(1)  |  Hard |Math|
 |  <a href="https://leetcode.com/problems/palindrome-pairs" target="_blank">0336</a> |Palindrome Pairs | [Java](https://e.srl/leetcode-336/)  | O(n\*lgm) |52ms| O(n\*m)  |  Hard |Tree|
 |  <a href="https://leetcode.com/problems/data-stream-as-disjoint-intervals" target="_blank">0352</a> |Data Stream as Disjoint Intervals | [Java](https://e.srl/leetcode-352/)  | O(n\*lgn) |155ms| O(n)  |  Hard |Binary Search| 
+|  <a href="https://leetcode.com/problems/russian-doll-envelopes" target="_blank">0354</a> |Russian Doll Envelopes | [Java](https://e.srl/leetcode-354/)  | O(n\*lgn) |13ms| O(n)  |  Hard |Binary Search DP| 
