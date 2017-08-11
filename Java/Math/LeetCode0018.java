@@ -1,89 +1,106 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
 public class LeetCode0018 {
-    public List<List<Integer>> fourSum(int[] nums, int target) {
-        final List<List<Integer>> res = new ArrayList<>();
-        final int len;
-        
-        if (nums == null || (len = nums.length) < 4) {
-            return res;
-        }
-        
-        Arrays.sort(nums);
-        
-        if ((nums[0] << 2) > target || (nums[len - 1] << 2) < target) {
-            return res;
-        }
-        
-        final int max3x = nums[len - 1] * 3;
-        
-        for (int i = 0, end = len - 3; i < end; ++i) {
-            final int cur = nums[i];
-            int tmp;
-            
-            if (cur + max3x < target) {
-                continue;
-            } else if ((tmp = cur << 2) > target) {
-                break;
-            } else if (tmp == target && nums[i + 3] == cur) {
-                res.add(Arrays.asList(cur, cur, cur, cur));
-            } else {
-                threeSum(nums, len, i + 1, target - cur, res, cur);
-            }
-            
-            while (i < end && nums[i] == nums[i + 1]) {
-                ++i;
-            }
-        }
-        
-        return res;
-    }
-    
-    private void threeSum(int[] nums, int len, int start, int target, List<List<Integer>> res, int first) {
-        if (nums[start] * 3 > target) {
-            return;
-        }
-        
-        final int max2x = nums[len - 1] << 1;
-        
-        for (int i = start, end = len - 2; i < end; ++i) {
-            final int cur = nums[i];
-            int tmp;
-            
-            if (cur + max2x < target) {
-                continue;
-            } else if ((tmp = cur * 3) > target) {
-                break;
-            } else if (tmp == target && nums[i + 2] == cur) {
-                res.add(Arrays.asList(first, cur, cur, cur));
-            } else {
-                twoSum(nums, len, i + 1, target - cur, res, first, cur);
-            }
-            
-            while (i < end && nums[i] == nums[i + 1]) {
-                ++i;
-            }
-        }
-    }
-    
-    private void twoSum(int[] nums, int len, int start, int target, List<List<Integer>> res, int first, int second) {
-        if ((nums[start] << 1) > target) {
-            return;
-        }
-        
-        int end = len - 1;
-        
-        while (start < end) {
-            final int cur = nums[start] + nums[end];
-            
-            if (cur > target) {
-                --end;
-            } else if (cur < target) {
-                ++start;
-            } else {
-                res.add(Arrays.asList(first, second, nums[start], nums[end]));
-                
-                while (++start < end && nums[start] == nums[start - 1]);
-                while (start < --end && nums[end] == nums[end + 1]);
-            }
-        }
-    }
+
+	class Tuple<X, Y> {
+		public X x;
+		public Y y;
+
+		public Tuple() {
+		}
+
+		public Tuple(X x, Y y) {
+			this.x = x;
+			this.y = y;
+		}
+	}
+
+	public List<List<Integer>> fourSum(int[] num, int target) {
+
+		final List<List<Integer>> result = new ArrayList<>();
+		final int length;
+
+		if (num == null || (length = num.length) < 4) {
+			return result;
+		}
+
+		Arrays.sort(num);
+
+		if ((num[0] << 2) > target || (num[length - 1] << 2) < target) {
+			return result;
+		}
+
+		Set<List<Integer>> reseltSet = new HashSet<>();
+		DivideSum2(num, target, reseltSet);
+
+		return new ArrayList<List<Integer>>(reseltSet);
+	}
+
+	private void DivideSum2(int[] num, int target, Set<List<Integer>> reseltSet) {
+
+		Map<Integer, List<Tuple<Integer, Integer>>> map = new HashMap<>();
+
+		for (int i = 0; i < num.length; i++) {
+
+			if (i > 1 && num[i] == num[i - 2]) {
+				continue;
+			}
+			for (int j = i + 1; j < num.length; j++) {
+
+				if (j > i + 2 && num[j] == num[j - 2]) {
+					continue;
+				}
+
+				int sum21 = num[i] + num[j];
+				int sum22 = target - sum21;
+
+				if (map.containsKey(sum22)) {
+					check(num, map.get(sum22), i, j, reseltSet);
+				}
+
+				List<Tuple<Integer, Integer>> list = map.get(sum21);
+				if (list == null) {
+					list = new ArrayList<>();
+					map.put(num[i] + num[j], list);
+				}
+				list.add(new Tuple<Integer, Integer>(i, j));
+			}
+		}
+	}
+
+	private void check(int[] nums, List<Tuple<Integer, Integer>> list, int index1, int index2,
+			Set<List<Integer>> results) {
+
+		for (Tuple<Integer, Integer> tuple : list) {
+
+			if (tuple.x == index1 || tuple.x == index2 || tuple.y == index1 || tuple.y == index2) {
+				continue;
+			} else {
+				List<Integer> result = Arrays.asList(nums[tuple.x], nums[tuple.y], nums[index1], nums[index2]);
+				Collections.sort(result);
+				results.add(result);
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		LeetCode0018 leetcode = new LeetCode0018();
+		int[] nums = new int[] { 1, 0, -1, 0, -2, 2 };
+
+		List<List<Integer>> results = leetcode.fourSum(nums, 0);
+
+		for (List<Integer> list : results) {
+			for (Integer number : list) {
+				System.out.print(number + " ");
+			}
+			System.out.println();
+		}
+	}
 }
