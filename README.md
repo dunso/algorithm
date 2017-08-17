@@ -195,6 +195,8 @@ Coding and press `ctrl + alt + n` to build and run. That's all, great!
 
 # LeetCode
 
+------------
+
 |Id  | Title  | Solution   | Time | Runtime |  Space | Difficulty  | Catagory|
 | :------------: | :------------ | :------------: | :------------: | :------------: | :------------: | :------------: |:------------: |
 |  <a href="https://leetcode.com/problems/two-sum" target="_blank">0001</a> |Two Sum | [C](https://e.srl/leetcode-1/)  |  no | 0ms  | O(n)  |  Easy |Array|
@@ -214,6 +216,7 @@ Coding and press `ctrl + alt + n` to build and run. That's all, great!
 |  <a href="https://leetcode.com/problems/3sum" target="_blank">0015</a> |3Sum | [C](https://e.srl/leetcode-15/)  | O(n\*n) |97.96%| O(n\*n)  |  Medium |Digital|
 |  <a href="https://leetcode.com/problems/3sum-closest" target="_blank">0016</a> |3Sum Closest | [C](https://e.srl/leetcode-16/)  | O(n\*n) |6ms| O(1)  |  Medium |Digital|
 |  <a href="https://leetcode.com/problems/letter-combinations-of-a-phone-number" target="_blank">0017</a> |Letter Combinations of a Phone Number | [C,C#](https://e.srl/leetcode-17/)  | O(n\*m) |0ms| O(n)  |  Medium |Queue|
+|  <a href="https://leetcode.com/problems/4sum/" target="_blank">0018</a> |4Sum | [Java](https://e.srl/leetcode-18/)  | O(n\*n) |-| O(n\*n)  |  Medium |Math|
 |  <a href="https://leetcode.com/problems/merge-k-sorted-lists" target="_blank">0023</a> |Merge k Sorted Lists | [C,Java](https://e.srl/leetcode-23/)  | O(n\*logn) |9ms| O(n)  |  Hard |Heap|
 |  <a href="https://leetcode.com/problems/reverse-nodes-in-k-group" target="_blank">0025</a> |Reverse Nodes in k-Group | [C,Java](https://e.srl/leetcode-25/)  | O(n) |6ms| O(1)  |  Hard |Linked|
 |  <a href="https://leetcode.com/problems/substring-with-concatenation-of-all-words" target="_blank">0030</a> |Substring with Concatenation of All Words | [Java](https://e.srl/leetcode-30/)  | O(n) |23ms| O(n)  |  Hard |String|
@@ -223,10 +226,18 @@ Coding and press `ctrl + alt + n` to build and run. That's all, great!
 |  <a href="https://leetcode.com/problems/trapping-rain-water" target="_blank">0042</a> |Trapping Rain Water | [C](https://e.srl/leetcode-42/)  | O(n) |6ms| O(1)  |  Hard |Array|
 |  <a href="https://leetcode.com/problems/wildcard-matching/" target="_blank">0044</a> |Wildcard Matching | [C#](https://e.srl/leetcode-44/)  | O(n\*n) |162ms| O(n\*n)  |  Hard |DP|
 |  <a href="https://leetcode.com/problems/jump-game-ii" target="_blank">0045</a> |Jump Game II | [C](https://e.srl/leetcode-45/)  | O(n) |6ms| O(1)  |  Hard |Greey|
+|  <a href="https://leetcode.com/problems/powx-n/" target="_blank">0050</a> |Pow(x, n) | [Java](https://e.srl/leetcode-50/)  | O(lgn) |99.47%| O(1)  |  Medium |Math|
 |  <a href="https://leetcode.com/problems/n-queens" target="_blank">0051</a> |N-Queens | [C](https://e.srl/leetcode-51/)  | - |3ms| O(n\*n)  |  Hard |Greey|
+|  <a href="https://leetcode.com/problems/spiral-matrix/" target="_blank">0054</a> |Spiral Matrix | [Java](https://e.srl/leetcode-54/)  | O(m\*n) |2ms| O(m\*n)  |  Medium |Matrix|
 |  <a href="https://leetcode.com/problems/insert-interval" target="_blank">0057</a> |Insert Interval | [C](https://e.srl/leetcode-57/)  | O(n) |6ms| O(n)  |  Hard |Array|
+|  <a href="https://leetcode.com/problems/set-matrix-zeroes/" target="_blank">0073</a> |Set Matrix Zeroes | [Java](https://e.srl/leetcode-73/)  | O(m\*n) |1ms| O(1)  |  Medium |Matrix|
+|  <a href="https://leetcode.com/problems/search-a-2d-matrix" target="_blank">0074</a> |Search a 2D Matrix | [Java](https://e.srl/leetcode-74/)  | O(n) |1ms| O(1)  |  Medium |Array|
+|  <a href="https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal" target="_blank">0105</a> |Construct Binary Tree from Preorder and Inorder Traversal | [Java](https://e.srl/leetcode-105/)  | O(n) |99.24%| O(n)  |  Medium |Tree|
+|  <a href="https://leetcode.com/problems/largest-number/" target="_blank">0179</a> |Largest Number | [Java](https://e.srl/leetcode-179/)  | O(n\*n) |99.89%| O(n)  |  Medium |Math| 
+|  <a href="https://leetcode.com/problems/reverse-linked-list" target="_blank">0206</a> |Reverse Linked List | [Java](https://e.srl/leetcode-206/)  | O(n) |0ms| O(1)  |  Easy |Linked|
 |  <a href="https://leetcode.com/problems/implement-trie-prefix-tree" target="_blank">0208</a> |Implement Trie (Prefix Tree) | [C](https://e.srl/leetcode-208/)  | O(n) |39ms| O(n)  |  Medium |Tree|
 |  <a href="https://leetcode.com/problems/contains-duplicate" target="_blank">0217</a> |Contains Duplicate | [Java](https://e.srl/leetcode-217/)  | O(n) |99.39%| O(1)  |  Easy |Array|
+|  <a href="https://leetcode.com/problems/search-a-2d-matrix-ii" target="_blank">0240</a> |Search a 2D Matrix II | [Java](https://e.srl/leetcode-240/)  | O(n + m) |13MS| O(1)  |  Medium |Matrix|
 |  <a href="https://leetcode.com/problems/longest-increasing-subsequence" target="_blank">0300</a> |Longest Increasing Subsequence | [Java](https://e.srl/leetcode-300/)  | O(n\*lgn) |0ms| O(n)  |  Medium |Binary Search DP| 
 |  <a href="https://leetcode.com/problems/count-of-smaller-numbers-after-self" target="_blank">0315</a> |Count of Smaller Numbers After Self | [C](https://e.srl/leetcode-315/)  | O(n\*logn) |16ms| O(n)  |  Hard |Tree|
 |  <a href="https://leetcode.com/problems/remove-duplicate-letters" target="_blank">0316</a> |Remove Duplicate Letters | [C](https://e.srl/leetcode-316/)  | O(n) |3ms| O(n)  |  Hard |Greedy Stack|
@@ -241,3 +252,4 @@ Coding and press `ctrl + alt + n` to build and run. That's all, great!
 |  <a href="https://leetcode.com/problems/russian-doll-envelopes" target="_blank">0354</a> |Russian Doll Envelopes | [Java](https://e.srl/leetcode-354/)  | O(n\*lgn) |13ms| O(n)  |  Hard |Binary Search DP| 
 |  <a href="https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/" target="_blank">0363</a> |Max Sum of Rectangle No Larger Than K | [Java](https://e.srl/leetcode-363/)  | O(n^2\*lgn) |99.55%| O(n)  |  Hard |Devide| 
 |  <a href="https://leetcode.com/problems/insert-delete-getrandom-o1/" target="_blank">0380</a> |Insert Delete GetRandom O(1) | [Java](https://e.srl/leetcode-380/)  | O(1) |98.10%| O(n)  |  Medium |Array| 
+|  <a href="https://leetcode.com/problems/4sum-ii/" target="_blank">0454</a> |4Sum II | [Java](https://e.srl/leetcode-454/)  | O(n\*n) |97.52%| O(n)  |  Medium |Math| 
