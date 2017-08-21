@@ -226,6 +226,7 @@ Coding and press `ctrl + alt + n` to build and run. That's all, great!
 |  <a href="https://leetcode.com/problems/trapping-rain-water" target="_blank">0042</a> |Trapping Rain Water | [C](https://e.srl/leetcode-42/)  | O(n) |6ms| O(1)  |  Hard |Array|
 |  <a href="https://leetcode.com/problems/wildcard-matching/" target="_blank">0044</a> |Wildcard Matching | [C#](https://e.srl/leetcode-44/)  | O(n\*n) |162ms| O(n\*n)  |  Hard |DP|
 |  <a href="https://leetcode.com/problems/jump-game-ii" target="_blank">0045</a> |Jump Game II | [C](https://e.srl/leetcode-45/)  | O(n) |6ms| O(1)  |  Hard |Greey|
+|  <a href="https://leetcode.com/problems/rotate-image" target="_blank">0048</a> |Rotate Image | [Java](https://e.srl/leetcode-48/)  | O(n\*n) |2ms| O(1)  |  Medium |Matrix|
 |  <a href="https://leetcode.com/problems/powx-n/" target="_blank">0050</a> |Pow(x, n) | [Java](https://e.srl/leetcode-50/)  | O(lgn) |99.47%| O(1)  |  Medium |Math|
 |  <a href="https://leetcode.com/problems/n-queens" target="_blank">0051</a> |N-Queens | [C](https://e.srl/leetcode-51/)  | - |3ms| O(n\*n)  |  Hard |Greey|
 |  <a href="https://leetcode.com/problems/spiral-matrix/" target="_blank">0054</a> |Spiral Matrix | [Java](https://e.srl/leetcode-54/)  | O(m\*n) |2ms| O(m\*n)  |  Medium |Matrix|
