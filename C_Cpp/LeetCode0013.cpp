@@ -20,9 +20,8 @@ public:
 	}
 };
 
-//int main() {
-//	LeetCode13 leetCode13;
-//	cout << leetCode13.romanToInt("MMMCMXCIX") << endl;
-//	system("pause");
-//	return 0;
-//}
+int main() {
+	LeetCode13 leetCode13;
+	cout << leetCode13.romanToInt("MMMCMXCIX") << endl;
+	return 0;
+}
