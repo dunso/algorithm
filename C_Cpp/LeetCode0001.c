@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void QuickSort(int* aNums, int* aIndex, int aHead, int aTail)
 {
@@ -71,15 +72,13 @@ int* twoSum(int* nums, int numsSize, int target)
     return NULL;
 }
 
-//int main()
-//{
-//	int mNums[4] = { -3,4,3,90 };
-//
-//	int* mResult = twoSum(mNums, 4, 0);
-//
-//	printf("[%d,%d]", mResult[0], mResult[1]);
-//
-//	system("pause");
-//
-//	return 1;
-//}
+int main()
+{
+    int mNums[4] = { -3, 4, 3, 90 };
+
+    int* mResult = twoSum(mNums, 4, 0);
+
+    printf("[%d,%d]", mResult[0], mResult[1]);
+
+    return 1;
+}
