@@ -217,11 +217,14 @@ Coding and press `ctrl + alt + n` to build and run. That's all, great!
 |  <a href="https://leetcode.com/problems/3sum-closest" target="_blank">0016</a> |3Sum Closest | [C](https://e.srl/leetcode-16/)  | O(n\*n) |6ms| O(1)  |  Medium |Digital|
 |  <a href="https://leetcode.com/problems/letter-combinations-of-a-phone-number" target="_blank">0017</a> |Letter Combinations of a Phone Number | [C,C#](https://e.srl/leetcode-17/)  | O(n\*m) |0ms| O(n)  |  Medium |Queue|
 |  <a href="https://leetcode.com/problems/4sum/" target="_blank">0018</a> |4Sum | [Java](https://e.srl/leetcode-18/)  | O(n\*n) |-| O(n\*n)  |  Medium |Math|
+|  <a href="https://leetcode.com/problems/valid-parentheses/" target="_blank">0020</a> |Valid Parentheses | [Java]  | O(n) |-| O(n)  |  Easy |Stack|
 |  <a href="https://leetcode.com/problems/merge-k-sorted-lists" target="_blank">0023</a> |Merge k Sorted Lists | [C,Java](https://e.srl/leetcode-23/)  | O(n\*logn) |9ms| O(n)  |  Hard |Heap|
 |  <a href="https://leetcode.com/problems/reverse-nodes-in-k-group" target="_blank">0025</a> |Reverse Nodes in k-Group | [C,Java](https://e.srl/leetcode-25/)  | O(n) |6ms| O(1)  |  Hard |Linked|
 |  <a href="https://leetcode.com/problems/substring-with-concatenation-of-all-words" target="_blank">0030</a> |Substring with Concatenation of All Words | [Java](https://e.srl/leetcode-30/)  | O(n) |23ms| O(n)  |  Hard |String|
 |  <a href="https://leetcode.com/problems/longest-valid-parentheses" target="_blank">0032</a> |Longest Valid Parentheses | [C](https://e.srl/leetcode-32/)  | O(n) |6ms| O(n)  |  Hard |DP|
 |  <a href="https://leetcode.com/problems/sudoku-solver" target="_blank">0037</a> |Sudoku Solver | [C](https://e.srl/leetcode-37/)  | O(n) |0ms| O(n\*n)  |  Hard |BT|
+|  <a href="https://leetcode.com/problems/combination-sum" target="_blank">0039</a> |Combination Sum | [Java](https://e.srl/leetcode-39/)  | O(n\*n) |19ms| O(n\*n)  |  Medium |DFS|
+|  <a href="https://leetcode.com/problems/combination-sum-ii/" target="_blank">0040</a> |Combination Sum II | [Java](https://e.srl/leetcode-40/)  | O(n\*n) |26ms| O(n\*n)  |  Medium |DFS|
 |  <a href="https://leetcode.com/problems/first-missing-positive" target="_blank">0041</a> |First Missing Positive | [C](https://e.srl/leetcode-41/)  | O(n) |3ms| O(1)  |  Hard |Array|
 |  <a href="https://leetcode.com/problems/trapping-rain-water" target="_blank">0042</a> |Trapping Rain Water | [C](https://e.srl/leetcode-42/)  | O(n) |6ms| O(1)  |  Hard |Array|
 |  <a href="https://leetcode.com/problems/wildcard-matching/" target="_blank">0044</a> |Wildcard Matching | [C#](https://e.srl/leetcode-44/)  | O(n\*n) |162ms| O(n\*n)  |  Hard |DP|
@@ -230,14 +233,35 @@ Coding and press `ctrl + alt + n` to build and run. That's all, great!
 |  <a href="https://leetcode.com/problems/powx-n/" target="_blank">0050</a> |Pow(x, n) | [Java](https://e.srl/leetcode-50/)  | O(lgn) |99.47%| O(1)  |  Medium |Math|
 |  <a href="https://leetcode.com/problems/n-queens" target="_blank">0051</a> |N-Queens | [C](https://e.srl/leetcode-51/)  | - |3ms| O(n\*n)  |  Hard |Greey|
 |  <a href="https://leetcode.com/problems/spiral-matrix/" target="_blank">0054</a> |Spiral Matrix | [Java](https://e.srl/leetcode-54/)  | O(m\*n) |2ms| O(m\*n)  |  Medium |Matrix|
+|  <a href="https://leetcode.com/problems/merge-intervals/" target="_blank">0056</a> |Merge Intervals | [Java]  | O(n) |-| O(n)  |  Medium |Array|
 |  <a href="https://leetcode.com/problems/insert-interval" target="_blank">0057</a> |Insert Interval | [C](https://e.srl/leetcode-57/)  | O(n) |6ms| O(n)  |  Hard |Array|
 |  <a href="https://leetcode.com/problems/set-matrix-zeroes/" target="_blank">0073</a> |Set Matrix Zeroes | [Java](https://e.srl/leetcode-73/)  | O(m\*n) |1ms| O(1)  |  Medium |Matrix|
-|  <a href="https://leetcode.com/problems/search-a-2d-matrix" target="_blank">0074</a> |Search a 2D Matrix | [Java](https://e.srl/leetcode-74/)  | O(n) |1ms| O(1)  |  Medium |Array|
+|  <a href="https://leetcode.com/problems/search-a-2d-matrix" target="_blank">0074</a> |Search a 2D Matrix | [Java](https://e.srl/leetcode-74/)  | O(n) |1ms| O(1)  |  Medium |Sort|
+|  <a href="https://leetcode.com/problems/sort-colors/" target="_blank">0075</a> |Sort Colors | [Java](https://e.srl/leetcode-75/)  | O(n) |0ms| O(1)  |  Medium |Array|
 |  <a href="https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal" target="_blank">0105</a> |Construct Binary Tree from Preorder and Inorder Traversal | [Java](https://e.srl/leetcode-105/)  | O(n) |99.24%| O(n)  |  Medium |Tree|
+|  <a href="https://leetcode.com/problems/word-ladder/" target="_blank">0127</a> |Word Ladder | [Java]  | O(n\*m\*k) |-| O(n)  |  Medium |BFS|
+|  <a href="https://leetcode.com/problems/single-number" target="_blank">0136</a> |Single Number | [Java]  | O(n) |1MS| O(1)  |  Easy |BIT|
+|  <a href="https://leetcode.com/problems/single-number-ii" target="_blank">0137</a> |Single Number II | [Java]  | O(32n) |9MS| O(1)  |  Medium |BIT|
+|  <a href="https://leetcode.com/problems/word-break/" target="_blank">0139</a> |Word Break | [Java]  | O(n\*n) |-| O(n)  |  Medium |DP|
+|  <a href="https://leetcode.com/problems/word-break-ii/" target="_blank">0140</a> |Word Break II | [Java]  | O(n\*n) |-| O(n)  |  Hard |DP|
+|  <a href="https://leetcode.com/problems/sort-list/" target="_blank">0148</a> |Sort List | [Java](https://e.srl/leetcode-148/)  | O(nlgn) |99.91%| O(1)  |  Medium |Linked|
+|  <a href="https://leetcode.com/problems/evaluate-reverse-polish-notation/" target="_blank">0150</a> |Evaluate Reverse Polish Notation | [Java]  | O(n) |-| O(n)  |  Medium |Stack|
+|  <a href="https://leetcode.com/problems/excel-sheet-column-title" target="_blank">0168</a> |Excel Sheet Column Title | [Java]  | O(lgn) |2MS| O(n)  |  Easy |Math|
+|  <a href="https://leetcode.com/problems/excel-sheet-column-number/" target="_blank">0171</a> |Excel Sheet Column Number | [Java]  | O(lgn) |0MS| O(n)  |  Easy |Math|
+|  <a href="https://leetcode.com/problems/factorial-trailing-zeroes/" target="_blank">0172</a> |Factorial Trailing Zeroes | [Java]  | O(lgn) |1MS| O(1)  |  Easy |Math|
 |  <a href="https://leetcode.com/problems/largest-number/" target="_blank">0179</a> |Largest Number | [Java](https://e.srl/leetcode-179/)  | O(n\*n) |99.89%| O(n)  |  Medium |Math| 
-|  <a href="https://leetcode.com/problems/reverse-linked-list" target="_blank">0206</a> |Reverse Linked List | [Java](https://e.srl/leetcode-206/)  | O(n) |0ms| O(1)  |  Easy |Linked|
+|  <a href="https://leetcode.com/problems/rotate-array" target="_blank">0189</a> |Rotate Array | [Java]  | O(n) |-| O(1)  |  Easy |Array| 
+|  <a href="https://leetcode.com/problems/reverse-bits/" target="_blank">0190</a> |Reverse Bits | [Java]  | O(n) |3MS| O(1)  |  Easy |BIT| 
+|  <a href="https://leetcode.com/problems/number-of-1-bits/" target="_blank">0191</a> |Number of 1 Bits | [Java]  | O(n) |1MS| O(1)  |  Easy |BIT| 
+|  <a href="https://leetcode.com/problems/bitwise-and-of-numbers-range/" target="_blank">0201</a> |Bitwise AND of Numbers Range | [Java]  | O(n) |9MS| O(1)  |  Medium |BIT| 
+|  <a href="https://leetcode.com/problems/happy-number/" target="_blank">0202</a> |Happy Number | [Java]  | - |5MS| O(1)  |  Easy |Math| 
+|  <a href="https://leetcode.com/problems/count-primes/" target="_blank">0204</a> |Count Primes | [Java]  | - |22MS| O(n)  |  Easy |Math| 
+|  <a href="https://leetcode.com/problems/reverse-linked-list" target="_blank">0206</a> |Reverse Linked List | [Java](https://e.srl/leetcode-206/)  | O(n) |0MS| O(1)  |  Easy |Linked|
 |  <a href="https://leetcode.com/problems/implement-trie-prefix-tree" target="_blank">0208</a> |Implement Trie (Prefix Tree) | [C](https://e.srl/leetcode-208/)  | O(n) |39ms| O(n)  |  Medium |Tree|
+|  <a href="https://leetcode.com/problems/kth-largest-element-in-an-array" target="_blank">0215</a> |Kth Largest Element in an Array | [Java]  | O(n\*lgn) |-| O(1)  |  Medium |Binary|
 |  <a href="https://leetcode.com/problems/contains-duplicate" target="_blank">0217</a> |Contains Duplicate | [Java](https://e.srl/leetcode-217/)  | O(n) |99.39%| O(1)  |  Easy |Array|
+|  <a href="https://leetcode.com/problems/invert-binary-tree/" target="_blank">0226</a> |Invert Binary Tree | [Java](https://e.srl/leetcode-226/)  | O(n) |0MS| O(1)  |  Easy |Tree|
+|  <a href="https://leetcode.com/problems/power-of-two" target="_blank">0231</a> |Power of Two | [Java]  | O(1) |2MS| O(1)  |  Easy |BIT| 
 |  <a href="https://leetcode.com/problems/search-a-2d-matrix-ii" target="_blank">0240</a> |Search a 2D Matrix II | [Java](https://e.srl/leetcode-240/)  | O(n + m) |13MS| O(1)  |  Medium |Matrix|
 |  <a href="https://leetcode.com/problems/longest-increasing-subsequence" target="_blank">0300</a> |Longest Increasing Subsequence | [Java](https://e.srl/leetcode-300/)  | O(n\*lgn) |0ms| O(n)  |  Medium |Binary Search DP| 
 |  <a href="https://leetcode.com/problems/count-of-smaller-numbers-after-self" target="_blank">0315</a> |Count of Smaller Numbers After Self | [C](https://e.srl/leetcode-315/)  | O(n\*logn) |16ms| O(n)  |  Hard |Tree|
@@ -249,8 +273,25 @@ Coding and press `ctrl + alt + n` to build and run. That's all, great!
 |  <a href="https://leetcode.com/problems/self-crossing" target="_blank">0335</a> |Self Crossing | [Java](https://e.srl/leetcode-335/)  | O(n) |0ms| O(1)  |  Hard |Math|
 |  <a href="https://leetcode.com/problems/palindrome-pairs" target="_blank">0336</a> |Palindrome Pairs | [Java](https://e.srl/leetcode-336/)  | O(n\*lgm) |52ms| O(n\*m)  |  Hard |Tree|
 |  <a href="https://leetcode.com/problems/counting-bits/" target="_blank">0338</a> |Counting Bits | [Java](https://e.srl/leetcode-338/)  | O(n) |2ms| O(n)  |  Medium |Math|
+|  <a href="https://leetcode.com/problems/integer-break/" target="_blank">0343</a> |Integer Break | [Java](https://e.srl/leetcode-343/)  | O(n\*n) |1ms| O(n)  |  Medium |DP|
 |  <a href="https://leetcode.com/problems/data-stream-as-disjoint-intervals" target="_blank">0352</a> |Data Stream as Disjoint Intervals | [Java](https://e.srl/leetcode-352/)  | O(n\*lgn) |155ms| O(n)  |  Hard |Binary Search| 
 |  <a href="https://leetcode.com/problems/russian-doll-envelopes" target="_blank">0354</a> |Russian Doll Envelopes | [Java](https://e.srl/leetcode-354/)  | O(n\*lgn) |13ms| O(n)  |  Hard |Binary Search DP| 
 |  <a href="https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/" target="_blank">0363</a> |Max Sum of Rectangle No Larger Than K | [Java](https://e.srl/leetcode-363/)  | O(n^2\*lgn) |99.55%| O(n)  |  Hard |Devide| 
+|  <a href="#" target="_blank">0370</a> |Range Addition  | [Java] | O(n) |-| O(n)  |   |   | 
+|  <a href="https://leetcode.com/problems/combination-sum-iv/" target="_blank">0377</a> |Combination Sum IV | [Java](https://e.srl/leetcode-377/)  | O(n\*n) |6MS| O(n)  |  Medium |DP|
 |  <a href="https://leetcode.com/problems/insert-delete-getrandom-o1/" target="_blank">0380</a> |Insert Delete GetRandom O(1) | [Java](https://e.srl/leetcode-380/)  | O(1) |98.10%| O(n)  |  Medium |Array| 
 |  <a href="https://leetcode.com/problems/4sum-ii/" target="_blank">0454</a> |4Sum II | [Java](https://e.srl/leetcode-454/)  | O(n\*n) |97.52%| O(n)  |  Medium |Math| 
+|  <a href="https://leetcode.com/problems/reshape-the-matrix" target="_blank">0566</a> |Reshape the Matrix| [Java](https://e.srl/leetcode-566/)  | O(n\*m) |7MS| O(n\*m)  |  Easy |Martix| 
+|  <a href="https://leetcode.com/problems/permutation-in-string" target="_blank">0567</a> |Permutation in String| [Java](https://e.srl/leetcode-567/)  | O(n) |-| O(n)  |  Medium |String| 
+|  <a href="https://leetcode.com/problems/subtree-of-another-tree" target="_blank">0572</a> |Subtree of Another Tree| [Java](https://e.srl/leetcode-572/)  | O(n) |13MS| O(1)  |  Easy |Tree| 
+|  <a href="https://leetcode.com/problems/distribute-candies" target="_blank">0575</a> |Distribute Candies| [Java](https://e.srl/leetcode-575/)  | O(n) |95.78%| O(n)  |  Easy |Set| 
+|  <a href="https://leetcode.com/problems/tag-validator" target="_blank">0591</a> |Tag Validator| [Java](https://e.srl/leetcode-591/)  | O(n) |19MS| O(n)  |  Hard |String| 
+|  <a href="https://leetcode.com/problems/fraction-addition-and-subtraction/" target="_blank">0592</a> |Fraction Addition and Subtraction| [Java](https://e.srl/leetcode-592/)  | O(n) |16MS| O(n)  |  Medium |Math| 
+|  <a href="https://leetcode.com/problems/valid-square" target="_blank">0593</a> |Valid Square| [Java](https://e.srl/leetcode-593/)  | O(n) |20MS| O(1)  |  Medium |Math| 
+|  <a href="https://leetcode.com/problems/longest-harmonious-subsequence/" target="_blank">0594</a> |Longest Harmonious Subsequence| [Java](https://e.srl/leetcode-594/)  | O(n) |71MS| O(n)  |  Easy |Map| 
+|  <a href="https://leetcode.com/problems/big-countries/" target="_blank">0595</a> |Big Countries| [MySql](https://e.srl/leetcode-595/)  | - |2979MS| -  |  Easy |Where| 
+|  <a href="https://leetcode.com/problems/classes-more-than-5-students" target="_blank">0596</a> |Classes More Than 5 Students| [MySql](https://e.srl/leetcode-596/)  | - |2610MS| -  |  Easy |Group| 
+|  <a href="#" target="_blank">0597</a> |Friend Requests I: Overall Acceptance Rate| Lock  | - |-| -  |  - |-| 
+|  <a href="https://leetcode.com/problems/range-addition-ii" target="_blank">0598</a> |Range Addition II | [Java](https://e.srl/leetcode-598/)  | O(n) |6MS| O(1)  |  Easy |Matrix| 
+|  <a href="https://leetcode.com/problems/minimum-index-sum-of-two-lists" target="_blank">0599</a> |Minimum Index Sum of Two Lists | [Java](https://e.srl/leetcode-599/)  | O(n) |26MS| O(n)  |  Easy |Map| 
+|  <a href="https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/" target="_blank">0600</a> |Non-negative Integers without Consecutive Ones | [Java](https://e.srl/leetcode-600/)  | O(n) |-| O(n)  |  Hard |Math| 
