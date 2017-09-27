@@ -263,6 +263,7 @@ Coding and press `ctrl + alt + n` to build and run. That's all, great!
 |  <a href="https://leetcode.com/problems/power-of-two" target="_blank">0231</a> |Power of Two | [Java]  | O(1) |2MS| O(1)  |  Easy |BIT| 
 |  <a href="https://leetcode.com/problems/search-a-2d-matrix-ii" target="_blank">0240</a> |Search a 2D Matrix II | [Java](https://e.srl/leetcode-240/)  | O(n + m) |13MS| O(1)  |  Medium |Matrix|
 |  <a href="https://leetcode.com/problems/longest-increasing-subsequence" target="_blank">0300</a> |Longest Increasing Subsequence | [Java](https://e.srl/leetcode-300/)  | O(n\*lgn) |0ms| O(n)  |  Medium |Binary Search DP| 
+|  <a href="https://leetcode.com/problems/range-sum-query-mutable" target="_blank">0307</a> |Range Sum Query - Mutable | [Java](https://e.srl/leetcode-307/)  | O(n\*logn) |-| O(n)  |  Medium |Tree|
 |  <a href="https://leetcode.com/problems/count-of-smaller-numbers-after-self" target="_blank">0315</a> |Count of Smaller Numbers After Self | [C](https://e.srl/leetcode-315/)  | O(n\*logn) |16ms| O(n)  |  Hard |Tree|
 |  <a href="https://leetcode.com/problems/remove-duplicate-letters" target="_blank">0316</a> |Remove Duplicate Letters | [C](https://e.srl/leetcode-316/)  | O(n) |3ms| O(n)  |  Hard |Greedy Stack|
 |  <a href="https://leetcode.com/problems/create-maximum-number" target="_blank">0321</a> |Create Maximum Number | [C](https://e.srl/leetcode-321/)  | O(n\*k) |12ms| O(n)  |  Hard |Greedy Stack|
