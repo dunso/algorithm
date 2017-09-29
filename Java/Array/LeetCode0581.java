@@ -1,5 +1,3 @@
-package com.leetcode;
-
 public class LeetCode0581 {
 
     public int findUnsortedSubarray(int[] nums)
