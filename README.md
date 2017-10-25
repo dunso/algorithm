@@ -263,6 +263,7 @@ Coding and press `ctrl + alt + n` to build and run. That's all, great!
 |  <a href="https://leetcode.com/problems/invert-binary-tree/" target="_blank">0226</a> |Invert Binary Tree | [Java](https://e.srl/leetcode-226/)  | O(n) |0MS| O(1)  |  Easy |Tree|
 |  <a href="https://leetcode.com/problems/power-of-two" target="_blank">0231</a> |Power of Two | [Java]  | O(1) |2MS| O(1)  |  Easy |BIT| 
 |  <a href="https://leetcode.com/problems/search-a-2d-matrix-ii" target="_blank">0240</a> |Search a 2D Matrix II | [Java](https://e.srl/leetcode-240/)  | O(n + m) |13MS| O(1)  |  Medium |Matrix|
+ <a href="https://leetcode.com/problems/perfect-squares" target="_blank">0279</a> |Perfect Squares | [Java](https://e.srl/leetcode-279/)  | O(n + m) |13MS| O(1)  |  Medium |Matrix|
 |  <a href="https://leetcode.com/problems/longest-increasing-subsequence" target="_blank">0300</a> |Longest Increasing Subsequence | [Java](https://e.srl/leetcode-300/)  | O(n\*lgn) |0ms| O(n)  |  Medium |Binary Search DP| 
 |  <a href="https://leetcode.com/problems/range-sum-query-mutable" target="_blank">0307</a> |Range Sum Query - Mutable | [Java](https://e.srl/leetcode-307/)  | O(n\*logn) |-| O(n)  |  Medium |Tree|
 |  <a href="https://leetcode.com/problems/count-of-smaller-numbers-after-self" target="_blank">0315</a> |Count of Smaller Numbers After Self | [C](https://e.srl/leetcode-315/)  | O(n\*logn) |16ms| O(n)  |  Hard |Tree|
