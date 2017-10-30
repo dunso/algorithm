@@ -246,6 +246,7 @@ Coding and press `ctrl + alt + n` to build and run. That's all, great!
 |  <a href="https://leetcode.com/problems/word-break-ii/" target="_blank">0140</a> |Word Break II | [Java]  | O(n\*n) |-| O(n)  |  Hard |DP|
 |  <a href="https://leetcode.com/problems/sort-list/" target="_blank">0148</a> |Sort List | [Java](https://e.srl/leetcode-148/)  | O(nlgn) |99.91%| O(1)  |  Medium |Linked|
 |  <a href="https://leetcode.com/problems/evaluate-reverse-polish-notation/" target="_blank">0150</a> |Evaluate Reverse Polish Notation | [Java]  | O(n) |-| O(n)  |  Medium |Stack|
+|  <a href="https://leetcode.com/problems/maximum-product-subarray/" target="_blank">0152</a> |Maximum Product Subarray | [Java]  | O(n) |-| O(n)  |  Medium |DP|
 |  <a href="https://leetcode.com/problems/excel-sheet-column-title" target="_blank">0168</a> |Excel Sheet Column Title | [Java]  | O(lgn) |2MS| O(n)  |  Easy |Math|
 |  <a href="https://leetcode.com/problems/excel-sheet-column-number/" target="_blank">0171</a> |Excel Sheet Column Number | [Java]  | O(lgn) |0MS| O(n)  |  Easy |Math|
 |  <a href="https://leetcode.com/problems/factorial-trailing-zeroes/" target="_blank">0172</a> |Factorial Trailing Zeroes | [Java]  | O(lgn) |1MS| O(1)  |  Easy |Math|
