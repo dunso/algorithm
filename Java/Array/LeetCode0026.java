@@ -1,6 +1,6 @@
 
-class LeetCode0026 {
-	public int removeDuplicates(int[] nums) {
+public class LeetCode0026 {
+    public int removeDuplicates(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 0;
         } else if (nums.length == 1) {
