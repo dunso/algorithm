@@ -238,6 +238,7 @@ Coding and press `ctrl + alt + n` to build and run. That's all, great!
 |  <a href="https://leetcode.com/problems/set-matrix-zeroes/" target="_blank">0073</a> |Set Matrix Zeroes | [Java](https://e.srl/leetcode-73/)  | O(m\*n) |1ms| O(1)  |  Medium |Matrix|
 |  <a href="https://leetcode.com/problems/search-a-2d-matrix" target="_blank">0074</a> |Search a 2D Matrix | [Java](https://e.srl/leetcode-74/)  | O(n) |1ms| O(1)  |  Medium |Sort|
 |  <a href="https://leetcode.com/problems/sort-colors/" target="_blank">0075</a> |Sort Colors | [Java](https://e.srl/leetcode-75/)  | O(n) |0ms| O(1)  |  Medium |Array|
+|  <a href="https://leetcode.com/problems/scramble-string" target="_blank">0087</a> |Scramble String | [Java](https://e.srl/leetcode-87/)  |-|-|-|  Hard |Tree|
 |  <a href="https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal" target="_blank">0105</a> |Construct Binary Tree from Preorder and Inorder Traversal | [Java](https://e.srl/leetcode-105/)  | O(n) |99.24%| O(n)  |  Medium |Tree|
 |  <a href="https://leetcode.com/problems/word-ladder/" target="_blank">0127</a> |Word Ladder | [Java]  | O(n\*m\*k) |-| O(n)  |  Medium |BFS|
 |  <a href="https://leetcode.com/problems/single-number" target="_blank">0136</a> |Single Number | [Java]  | O(n) |1MS| O(1)  |  Easy |BIT|
