@@ -245,6 +245,7 @@ Coding and press `ctrl + alt + n` to build and run. That's all, great!
 |  <a href="https://leetcode.com/problems/single-number-ii" target="_blank">0137</a> |Single Number II | [Java]  | O(32n) |9MS| O(1)  |  Medium |BIT|
 |  <a href="https://leetcode.com/problems/word-break/" target="_blank">0139</a> |Word Break | [Java]  | O(n\*n) |-| O(n)  |  Medium |DP|
 |  <a href="https://leetcode.com/problems/word-break-ii/" target="_blank">0140</a> |Word Break II | [Java]  | O(n\*n) |-| O(n)  |  Hard |DP|
+|  <a href="https://leetcode.com/problems/binary-tree-preorder-traversal" target="_blank">0144</a> |Binary Tree Preorder Traversal | [Java]  |-|-|-|  Medium |Tree|
 |  <a href="https://leetcode.com/problems/sort-list/" target="_blank">0148</a> |Sort List | [Java](https://e.srl/leetcode-148/)  | O(nlgn) |99.91%| O(1)  |  Medium |Linked|
 |  <a href="https://leetcode.com/problems/evaluate-reverse-polish-notation/" target="_blank">0150</a> |Evaluate Reverse Polish Notation | [Java]  | O(n) |-| O(n)  |  Medium |Stack|
 |  <a href="https://leetcode.com/problems/maximum-product-subarray/" target="_blank">0152</a> |Maximum Product Subarray | [Java]  | O(n) |-| O(n)  |  Medium |DP|
