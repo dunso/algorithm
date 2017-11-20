@@ -263,6 +263,7 @@ Coding and press `ctrl + alt + n` to build and run. That's all, great!
 |  <a href="https://leetcode.com/problems/implement-trie-prefix-tree" target="_blank">0208</a> |Implement Trie (Prefix Tree) | [C](https://e.srl/leetcode-208/)  | O(n) |39ms| O(n)  |  Medium |Tree|
 |  <a href="https://leetcode.com/problems/kth-largest-element-in-an-array" target="_blank">0215</a> |Kth Largest Element in an Array | [Java]  | O(n\*lgn) |-| O(1)  |  Medium |Binary|
 |  <a href="https://leetcode.com/problems/contains-duplicate" target="_blank">0217</a> |Contains Duplicate | [Java](https://e.srl/leetcode-217/)  | O(n) |99.39%| O(1)  |  Easy |Array|
+|  <a href="https://leetcode.com/problems/basic-calculator/" target="_blank">0224</a> |Basic Calculator | [Java](https://e.srl/leetcode-224/)  |-|-|-|  Hard |String|
 |  <a href="https://leetcode.com/problems/invert-binary-tree/" target="_blank">0226</a> |Invert Binary Tree | [Java](https://e.srl/leetcode-226/)  | O(n) |0MS| O(1)  |  Easy |Tree|
 |  <a href="https://leetcode.com/problems/basic-calculator-ii/" target="_blank">0227</a> |Basic Calculator II  | [Java](https://e.srl/leetcode-227/)  |-|-|-|  Medium |String|
 |  <a href="https://leetcode.com/problems/power-of-two" target="_blank">0231</a> |Power of Two | [Java]  | O(1) |2MS| O(1)  |  Easy |BIT| 
