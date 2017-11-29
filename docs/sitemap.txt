@@ -1,11 +1,11 @@
 
-dunso/about
-dunso/atom.xml
-dunso/categories
-dunso/
-dunso/posts
-dunso/rss.xml
-dunso/sitemap.txt
-dunso/timeline
+dunso.github.io/algorithm/about
+dunso.github.io/algorithm/atom.xml
+dunso.github.io/algorithm/categories
+dunso.github.io/algorithm/
+dunso.github.io/algorithm/posts
+dunso.github.io/algorithm/rss.xml
+dunso.github.io/algorithm/sitemap.txt
+dunso.github.io/algorithm/timeline
 
-dunso/2017/11/29/Array
+dunso.github.io/algorithm/2017/11/29/Array
