@@ -1,11 +1,8 @@
-
-dunso.github.io/algorithm/about
-dunso.github.io/algorithm/atom.xml
-dunso.github.io/algorithm/categories
-dunso.github.io/algorithm/
-dunso.github.io/algorithm/posts
-dunso.github.io/algorithm/rss.xml
-dunso.github.io/algorithm/sitemap.txt
-dunso.github.io/algorithm/timeline
-
-dunso.github.io/algorithm/2017/11/29/Array
+---
+# Remember to set production_url in your _config.yml file!
+title : Sitemap
+---
+{% for page in site.pages %}
+{{site.production_url}}{{ page.url | relative_url}}{% endfor %}
+{% for post in site.posts %}
+{{site.production_url}}{{ post.url | relative_url}}{% endfor %}

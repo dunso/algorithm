@@ -1,0 +1,10 @@
+{% comment %} index.html页面中的导航 {% endcomment %}
+{% assign color_hack = 'posts timeline categories about' %}
+{% assign current_nav = page.url | relative_url | remove:'/' | remove:'.html' %}
+{% assign color_hack = color_hack | replace:{{current_nav}},'active' %}
+{% assign color_hack = color_hack | split:' ' %}
+
+<li class="{{color_hack[0]}}"><a href="{{ "/posts.html" | relative_url }}">Article</a></li>
+<li class="{{color_hack[1]}}"><a href="{{ "/timeline.html" | relative_url }}">Archive</a></li>
+<li class="{{color_hack[2]}}"><a href="{{ "/categories.html" | relative_url }}">Catagory</a></li>
+<li class="{{color_hack[3]}}"><a href="{{ "/about.html" | relative_url }}">About</a></li>

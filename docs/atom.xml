@@ -1,202 +1,28 @@
+---
+layout: nil
+title : Atom Feed
+---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Algorithm</title>
- <link href="dunso.github.io/algorithm/" rel="self"/>
- <link href="dunso.github.io/algorithm"/>
- <updated>2017-11-29T22:26:11+08:00</updated>
- <id>dunso.github.io/algorithm</id>
+ <title>{{ site.title }}</title>
+ <link href="{{ site.production_url }}/{{ site.atom_path }}" rel="self"/>
+ <link href="{{ site.production_url }}"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>{{ site.production_url }}</id>
  <author>
-   <name>dunso</name>
-   <email></email>
+   <name>{{ site.author.name }}</name>
+   <email>{{ site.author.email }}</email>
  </author>
 
- 
+ {% for post in site.posts %}
  <entry>
-   <title>Array Algorithm in LeetCode</title>
-   <link href="dunso.github.io/algorithm/2017/11/29/Array"/>
-   <updated>2017-11-29T00:00:00+08:00</updated>
-   <id>dunso.github.io/algorithm/2017/11/29/Array</id>
-   <content type="html">
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Id&lt;/th&gt;
-      &lt;th&gt;Title&lt;/th&gt;
-      &lt;th&gt;Solution&lt;/th&gt;
-      &lt;th&gt;Time&lt;/th&gt;
-      &lt;th&gt;Runtime&lt;/th&gt;
-      &lt;th&gt;Space&lt;/th&gt;
-      &lt;th&gt;Difficulty&lt;/th&gt;
-      &lt;th&gt;Catagory&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://leetcode.com/problems/two-sum&quot; target=&quot;_blank&quot;&gt;0001&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;Two Sum&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://e.srl/leetcode-1/&quot;&gt;C&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;no&lt;/td&gt;
-      &lt;td&gt;0ms&lt;/td&gt;
-      &lt;td&gt;O(n)&lt;/td&gt;
-      &lt;td&gt;Easy&lt;/td&gt;
-      &lt;td&gt;Array&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://leetcode.com/problems/add-two-numbers&quot; target=&quot;_blank&quot;&gt;0002&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;Add Two Numbers&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://e.srl/leetcode-2/&quot;&gt;C&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;no&lt;/td&gt;
-      &lt;td&gt;32ms&lt;/td&gt;
-      &lt;td&gt;O(1)&lt;/td&gt;
-      &lt;td&gt;Medium&lt;/td&gt;
-      &lt;td&gt;Array&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://leetcode.com/problems/longest-substring-without-repeating-characters&quot; target=&quot;_blank&quot;&gt;0003&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;Longest Substring Without Repeating Characters&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://e.srl/leetcode-3/&quot;&gt;C&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;no&lt;/td&gt;
-      &lt;td&gt;18ms&lt;/td&gt;
-      &lt;td&gt;O(n)&lt;/td&gt;
-      &lt;td&gt;Medium&lt;/td&gt;
-      &lt;td&gt;Array&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://leetcode.com/problems/longest-palindromic-substring&quot; target=&quot;_blank&quot;&gt;0005&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;Longest Palindromic Substring&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://e.srl/leetcode-5/&quot;&gt;C&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;no&lt;/td&gt;
-      &lt;td&gt;9ms&lt;/td&gt;
-      &lt;td&gt;O(1)&lt;/td&gt;
-      &lt;td&gt;Medium&lt;/td&gt;
-      &lt;td&gt;Array&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://leetcode.com/problems/zigzag-conversion&quot; target=&quot;_blank&quot;&gt;0006&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;ZigZag Conversion&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://e.srl/leetcode-6/&quot;&gt;C#&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;no&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;O(n)&lt;/td&gt;
-      &lt;td&gt;Medium&lt;/td&gt;
-      &lt;td&gt;Array&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://leetcode.com/problems/longest-common-prefix&quot; target=&quot;_blank&quot;&gt;0014&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;Longest Common Prefix&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://e.srl/leetcode-14/&quot;&gt;C&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;O(n*n)&lt;/td&gt;
-      &lt;td&gt;3ms&lt;/td&gt;
-      &lt;td&gt;O(n)&lt;/td&gt;
-      &lt;td&gt;Easy&lt;/td&gt;
-      &lt;td&gt;Array&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://leetcode.com/problems/first-missing-positive&quot; target=&quot;_blank&quot;&gt;0041&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;First Missing Positive&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://e.srl/leetcode-41/&quot;&gt;C&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;O(n)&lt;/td&gt;
-      &lt;td&gt;3ms&lt;/td&gt;
-      &lt;td&gt;O(1)&lt;/td&gt;
-      &lt;td&gt;Hard&lt;/td&gt;
-      &lt;td&gt;Array&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://leetcode.com/problems/trapping-rain-water&quot; target=&quot;_blank&quot;&gt;0042&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;Trapping Rain Water&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://e.srl/leetcode-42/&quot;&gt;C&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;O(n)&lt;/td&gt;
-      &lt;td&gt;6ms&lt;/td&gt;
-      &lt;td&gt;O(1)&lt;/td&gt;
-      &lt;td&gt;Hard&lt;/td&gt;
-      &lt;td&gt;Array&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://leetcode.com/problems/merge-intervals/&quot; target=&quot;_blank&quot;&gt;0056&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;Merge Intervals&lt;/td&gt;
-      &lt;td&gt;[Java]&lt;/td&gt;
-      &lt;td&gt;O(n)&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt;O(n)&lt;/td&gt;
-      &lt;td&gt;Medium&lt;/td&gt;
-      &lt;td&gt;Array&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://leetcode.com/problems/insert-interval&quot; target=&quot;_blank&quot;&gt;0057&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;Insert Interval&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://e.srl/leetcode-57/&quot;&gt;C&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;O(n)&lt;/td&gt;
-      &lt;td&gt;6ms&lt;/td&gt;
-      &lt;td&gt;O(n)&lt;/td&gt;
-      &lt;td&gt;Hard&lt;/td&gt;
-      &lt;td&gt;Array&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://leetcode.com/problems/sort-colors/&quot; target=&quot;_blank&quot;&gt;0075&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;Sort Colors&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://e.srl/leetcode-75/&quot;&gt;Java&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;O(n)&lt;/td&gt;
-      &lt;td&gt;0ms&lt;/td&gt;
-      &lt;td&gt;O(1)&lt;/td&gt;
-      &lt;td&gt;Medium&lt;/td&gt;
-      &lt;td&gt;Array&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://leetcode.com/problems/rotate-array&quot; target=&quot;_blank&quot;&gt;0189&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;Rotate Array&lt;/td&gt;
-      &lt;td&gt;[Java]&lt;/td&gt;
-      &lt;td&gt;O(n)&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt;O(1)&lt;/td&gt;
-      &lt;td&gt;Easy&lt;/td&gt;
-      &lt;td&gt;Array&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://leetcode.com/problems/contains-duplicate&quot; target=&quot;_blank&quot;&gt;0217&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;Contains Duplicate&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://e.srl/leetcode-217/&quot;&gt;Java&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;O(n)&lt;/td&gt;
-      &lt;td&gt;99.39%&lt;/td&gt;
-      &lt;td&gt;O(1)&lt;/td&gt;
-      &lt;td&gt;Easy&lt;/td&gt;
-      &lt;td&gt;Array&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://leetcode.com/problems/array-partition-i&quot; target=&quot;_blank&quot;&gt;0561&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;Array Partition I&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://e.srl/leetcode-561/&quot;&gt;Java&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;O(n)&lt;/td&gt;
-      &lt;td&gt;90.95%&lt;/td&gt;
-      &lt;td&gt;O(1)&lt;/td&gt;
-      &lt;td&gt;Easy&lt;/td&gt;
-      &lt;td&gt;Array&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://leetcode.com/problems/array-nesting&quot; target=&quot;_blank&quot;&gt;0565&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;Array Nesting&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://e.srl/leetcode-565/&quot;&gt;Java&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;O(n)&lt;/td&gt;
-      &lt;td&gt;36MS&lt;/td&gt;
-      &lt;td&gt;O(1)&lt;/td&gt;
-      &lt;td&gt;Medium&lt;/td&gt;
-      &lt;td&gt;Array&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://leetcode.com/problems/insert-delete-getrandom-o1/&quot; target=&quot;_blank&quot;&gt;0380&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;Insert Delete GetRandom O(1)&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://e.srl/leetcode-380/&quot;&gt;Java&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;O(1)&lt;/td&gt;
-      &lt;td&gt;98.10%&lt;/td&gt;
-      &lt;td&gt;O(n)&lt;/td&gt;
-      &lt;td&gt;Medium&lt;/td&gt;
-      &lt;td&gt;Array&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-</content>
+   <title>{{ post.title }}</title>
+   <link href="{{ site.production_url }}{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>{{ site.production_url }}{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
- 
+ {% endfor %}
  
 </feed>

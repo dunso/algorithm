@@ -1,0 +1,47 @@
+<div class="row post-full typo">
+  <div class="col-md-2"></div>
+  <div class="col-md-8 typo">
+    <h2>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h2>
+    <div class="post_info">
+      {% unless page.categories == empty %}
+      <ul id="post_info" class="tag_box inline">
+        <li><i class="fa fa-calendar"></i></li>
+        <li>{{ page.date | date: " %Y-%m-%d " }}</li>
+        <li><i class="fa fa-folder-open"></i></li>
+        {% assign post_categories = page.categories %}
+        {% include site/post_categories_info %}
+      </ul>
+      {% endunless %}
+    </div>
+    <div class="content">
+      {{ content }}
+    </div>
+
+    {% unless page.tags == empty %}
+    <ul id="tag_info" class="tag_box inline">
+      <li><i class="fa fa-tags"></i></li>
+      {% assign tags_list = page.tags %}
+      {% include site/tags_list %}
+    </ul>
+    {% endunless %}
+
+    <hr>
+      <ul class="pagination pull-right">
+        {% if page.previous %}
+        <li class="prev"><a href="{{ BASE_PATH | relative_url}}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Pre</a></li>
+        {% else %}
+        <li class="prev disabled"><a>&larr; Pre</a></li>
+        {% endif %}
+        <li><a href="{{ BASE_PATH | relative_url}}{{ site.site.archive_path }}">Index</a></li>
+        {% if page.next %}
+        <li class="next"><a href="{{ BASE_PATH | relative_url}}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+        {% else %}
+        <li class="next disabled"><a>Next &rarr;</a>
+        {% endif %}
+      </ul>
+    <br />
+    <div id="comment-hook"></div>
+    {% include site/comments %}
+  </div>
+  <div class="col-md-2"></div>
+</div>
