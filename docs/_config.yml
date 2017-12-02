@@ -3,8 +3,8 @@ port: 11111
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 markdown: kramdown
-#highlighter: rouge
-pygments: true
+highlighter: rouge
+# pygments: true
 # 分页配置，每页最多显示几篇文章
 paginate: 4
 
