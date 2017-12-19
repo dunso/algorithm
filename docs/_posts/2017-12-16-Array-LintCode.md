@@ -12,7 +12,7 @@ icon: file-alt
 
 |Id  | Title  | Solution   | Time | Runtime |  Space | Difficulty  | Catagory|
  ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------
-|  <a href="http://www.lintcode.com/en/problem/space-replacement/" target="_blank">0212</a> |Space Replacement | [Java](https://e.srl/lintcode-212/)  |-|-|-|  Easy |Array|
+|  <a href="http://www.lintcode.com/en/problem/space-replacement/" target="_blank">0212</a> |Space Replacement | [C++](https://e.srl/lintcode-212/)  |-|-|-|  Easy |Array|
 
 
 
