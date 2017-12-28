@@ -1,85 +1,89 @@
-class LeetCode0126 {
-    class WordNode {
-        String word;
-        int numSteps;
-        WordNode pre;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
-        public WordNode(String word, int numSteps, WordNode pre) {
-            this.word = word;
-            this.numSteps = numSteps;
-            this.pre = pre;
+public class LeetCode0126_BFS {
+
+    class Node {
+        String str;
+        int level;
+        Node parent;
+
+        public Node(String str, int level, Node parent) {
+            this.str = str;
+            this.level = level;
+            this.parent = parent;
         }
     }
 
     public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
+
         List<List<String>> result = new ArrayList<List<String>>();
+        if (wordList == null || wordList.size() == 0) {
+            return result;
+        }
 
-        LinkedList<WordNode> queue = new LinkedList<WordNode>();
-        queue.add(new WordNode(beginWord, 1, null));
+        Queue<Node> queue = new LinkedList<Node>();
+        queue.add(new Node(beginWord, 1, null));
 
-        int minStep = 0;
+        int min = wordList.size() + 1;
 
         HashSet<String> visited = new HashSet<String>();
         HashSet<String> unvisited = new HashSet<String>();
         unvisited.addAll(wordList);
 
-        int preNumSteps = 0;
+        int preLevel = 0;
 
         while (!queue.isEmpty()) {
-            WordNode top = queue.remove();
-            String word = top.word;
-            int currNumSteps = top.numSteps;
+            Node node = queue.poll();
 
-            if (word.equals(endWord)) {
-                if (minStep == 0) {
-                    minStep = top.numSteps;
-                }
-
-                if (top.numSteps == minStep && minStep != 0) {
-                    ArrayList<String> t = new ArrayList<String>();
-                    t.add(top.word);
-                    while (top.pre != null) {
-                        t.add(0, top.pre.word);
-                        top = top.pre;
-                    }
-                    result.add(t);
-                    continue;
-                }
-
+            if (node.level > min) {
+                continue;
             }
 
-            if (preNumSteps < currNumSteps) {
+            if (endWord.equals(node.str)) {
+                Node p = node;
+                min = p.level;
+                LinkedList<String> res = new LinkedList<String>();
+                while (p != null) {
+                    res.addFirst(p.str);
+                    p = p.parent;
+                }
+                result.add(res);
+                continue;
+            }
+
+            if (preLevel < node.level) {
+                preLevel = node.level;
                 unvisited.removeAll(visited);
             }
 
-            preNumSteps = currNumSteps;
-
-            char[] arr = word.toCharArray();
+            char[] arr = node.str.toCharArray();
             for (int i = 0; i < arr.length; i++) {
-                for (char c = 'a'; c <= 'z'; c++) {
-                    char temp = arr[i];
-                    if (arr[i] != c) {
-                        arr[i] = c;
+                char c = arr[i];
+                for (char j = 'a'; j <= 'z'; j++) {
+                    arr[i] = j;
+                    String newStr = new String(arr);
+                    if (!unvisited.contains(newStr)) {
+                        continue;
                     }
-
-                    String newWord = new String(arr);
-                    if (unvisited.contains(newWord)) {
-                        queue.add(new WordNode(newWord, top.numSteps + 1, top));
-                        visited.add(newWord);
-                    }
-
-                    arr[i] = temp;
+                    visited.add(newStr);
+                    Node newNode = new Node(newStr, node.level + 1, node);
+                    queue.offer(newNode);
                 }
+                arr[i] = c;
             }
-
         }
         return result;
     }
 
     public static void main(String[] args) {
-        LeetCode0126 leetcode = new LeetCode0126();
-        List<String> wordList = new ArrayList<String>(Arrays.asList("hot", "dog", "dot"));
-        List<List<String>> result = leetcode.findLadders("hot", "dog", wordList);
+        LeetCode0126_BFS leetcode = new LeetCode0126_BFS();
+        List<String> wordList = new ArrayList<String>(Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"));
+        List<List<String>> result = leetcode.findLadders("hit", "cog", wordList);
         for (int i = 0; i < result.size(); i++) {
             System.out.println((result.get(i).toString()));
         }
