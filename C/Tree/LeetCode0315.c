@@ -2,20 +2,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct segmentTree {
+typedef struct segmentTree
+{
     int min;
     int max;
     int count;
 } segmentTree;
 
-segmentTree* tree;
+segmentTree *tree;
 int min = INT_MAX;
 void buildTree(int l, int r, int current)
 {
     tree[current].min = l;
     tree[current].max = r;
     tree[current].count = 0;
-    if (l == r) {
+    if (l == r)
+    {
         return;
     }
     int mid = tree[current].min + tree[current].max >> 1;
@@ -25,14 +27,17 @@ void buildTree(int l, int r, int current)
 
 int query(int num, int current)
 {
-    if (num >= tree[current].max) {
+    if (num >= tree[current].max)
+    {
         return tree[current].count;
     }
-    if (num < min) {
+    if (num < min)
+    {
         return 0;
     }
 
-    if (num <= tree[current].min + tree[current].max >> 1) {
+    if (num <= tree[current].min + tree[current].max >> 1)
+    {
         return query(num, current << 1);
     }
 
@@ -41,7 +46,8 @@ int query(int num, int current)
 
 void insert(int num, int current)
 {
-    if (num < tree[current].min || num > tree[current].max || tree[current].min == tree[current].max) {
+    if (num < tree[current].min || num > tree[current].max || tree[current].min == tree[current].max)
+    {
         return;
     }
 
@@ -49,36 +55,41 @@ void insert(int num, int current)
 
     int mid = tree[current].min + tree[current].max >> 1;
 
-    if (num <= mid) {
+    if (num <= mid)
+    {
         insert(num, current << 1);
-    } else {
+    }
+    else
+    {
         insert(num, current << 1 | 1);
     }
 }
 
-int* countSmaller(int* nums, int numsSize, int* returnSize)
+int *countSmaller(int *nums, int numsSize, int *returnSize)
 {
-
     (*returnSize) = 0;
-    int* result = (int*)malloc(sizeof(int*) * numsSize);
+    int *result = (int *)malloc(sizeof(int *) * numsSize);
 
-    if (numsSize == 0) {
+    if (numsSize == 0)
+    {
         return result;
     }
 
     int max = INT_MIN;
     min = INT_MAX;
 
-    for (int i = 0; i < numsSize; i++) {
+    for (int i = 0; i < numsSize; i++)
+    {
         min = min > nums[i] ? nums[i] : min;
         max = max < nums[i] ? nums[i] : max;
     }
 
-    tree = (segmentTree*)malloc(sizeof(segmentTree) * (max - min + 1) * 4);
+    tree = (segmentTree *)malloc(sizeof(segmentTree) * (max - min + 1) * 4);
 
     buildTree(min, max, 1);
 
-    for (int i = numsSize - 1; i >= 0; i--) {
+    for (int i = numsSize - 1; i >= 0; i--)
+    {
         result[i] = query(nums[i] - 1, 1);
         insert(nums[i], 1);
         (*returnSize)++;
@@ -88,11 +99,12 @@ int* countSmaller(int* nums, int numsSize, int* returnSize)
 
 int main()
 {
-    int nums[] = { 1, 9, 7, 8, 5 };
+    int nums[] = {1, 9, 7, 8, 5};
 
-    int* returnSize = malloc(sizeof(int));
-    int* result = countSmaller(nums, 5, returnSize);
-    for (int i = 0; i < *returnSize; i++) {
+    int *returnSize = malloc(sizeof(int));
+    int *result = countSmaller(nums, 5, returnSize);
+    for (int i = 0; i < *returnSize; i++)
+    {
         printf("%d ", result[i]);
     }
     system("pause");
