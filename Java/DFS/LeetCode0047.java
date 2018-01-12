@@ -60,12 +60,4 @@ public class LeetCode0047 {
 		}
 		return sb.toString();
 	}
-
-	public static void main(String[] args) {
-		LeetCode0047 leetcode = new LeetCode0047();
-		List<List<Integer>> result = leetcode.permuteUnique(new int[] { 1, -1, 1, 2, -1, 2, 2, -1 });
-		for (int i = 0; i < result.size(); i++) {
-			System.out.println(result.get(i));
-		}
-	}
 }
