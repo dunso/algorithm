@@ -17,9 +17,9 @@ public class LeetCode0049 {
 
 		for (int i = 0; i < strs.length; i++) {
 			String str = strs[i];
-			String array[] = str.split("");
+			char array[] = str.toCharArray();
 			Arrays.sort(array);
-			String hash = Arrays.toString(array);
+			String hash = String.valueOf(array);
 			if (map.containsKey(hash)) {
 				map.get(hash).add(str);
 			} else {
