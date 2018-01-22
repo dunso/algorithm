@@ -6,9 +6,7 @@ public class LeetCode0031 {
 		if (nums == null || nums.length == 0) {
 			return;
 		}
-
 		int max = nums[nums.length - 1];
-
 		for (int i = nums.length - 2; i >= 0; i--) {
 			
 			if(nums[i] >= max) {
@@ -30,13 +28,10 @@ public class LeetCode0031 {
 			nums[index] ^= nums[i];
 			nums[i] ^= nums[index];
 			
-			Arrays.sort(nums, i + 1, nums.length);
-			
+			Arrays.sort(nums, i + 1, nums.length);			
 			return;			
 		}
-
 		Arrays.sort(nums);
-		return;
 	}
 
 	public static void main(String[] args) {
