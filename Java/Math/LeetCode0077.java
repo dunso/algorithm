@@ -1,8 +1,5 @@
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Set;
 
 public class LeetCode0077 {
 	public List<List<Integer>> combine(int n, int k) {
@@ -10,31 +7,24 @@ public class LeetCode0077 {
 		if (n == 0 || k == 0 || n < k) {
 			return result;
 		}
-		Set<Integer> set = new HashSet<Integer>();
-		for (int i = 1; i <= n; i++) {
-			set.add(i);
-		}
-		dfs(n, k, result, new LinkedList<Integer>(), set);
+		dfs(1, n, k, result, new ArrayList<Integer>());
 		return result;
-
 	}
 
-	private void dfs(int n, int k, List<List<Integer>> result, LinkedList<Integer> current, Set<Integer> set) {
-
-		if (current.size() == k) {
-			result.add(new LinkedList<Integer>(current));
+	private void dfs(int start, int n, int k, List<List<Integer>> result, ArrayList<Integer> current) {
+		if (k == 0) {
+			result.add(new ArrayList<Integer>(current));
 			return;
 		}
 
-		for (int i = current.isEmpty() ? 1 : current.getLast(); i <= n; i++) {
-			if (set.contains(i)) {
-				current.add(i);
-				set.remove(i);
-				dfs(n, k, result, current, set);
-				current.removeLast();
-				set.add(i);
-			}
+		if (start > n) {
+			return;
 		}
+
+		current.add(start);
+		dfs(start + 1, n, k - 1, result, current);
+		current.remove(current.size() - 1);
+		dfs(start + 1, n, k, result, current);
 	}
 
 	public static void main(String[] args) {
