@@ -12,7 +12,7 @@ icon: file-alt
 
 |Id  | Title  | Solution   | Time | Runtime |  Space | Difficulty  | Catagory|
  ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------
-|0399|[Evaluate Division](https://leetcode.com/problems/evaluate-division/) | [Java](https://e.srl/leetcode-399/)  |-|-|-|  Medium |Graph|
+|0399|[Evaluate Division](https://leetcode.com/problems/evaluate-division/) | [Java](https://algorithm.dun.so/leetcode-399/)  |-|-|-|  Medium |Graph|
 
 
 

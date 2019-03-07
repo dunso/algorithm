@@ -12,7 +12,7 @@ icon: file-alt
 
 |Id  | Title  | Solution   | Time | Runtime |  Space | Difficulty  | Catagory|
  ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------
-|0292|[Nim Game](https://leetcode.com/problems/nim-game/) | [Java](https://e.srl/leetcode-292/)  |-|-|-|  Easy |Brainteaser|
+|0292|[Nim Game](https://leetcode.com/problems/nim-game/) | [Java](https://algorithm.dun.so/leetcode-292/)  |-|-|-|  Easy |Brainteaser|
 
 
 
